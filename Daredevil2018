@@ -1,0 +1,279 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=UnifrakturCook:700');
+@import url('https://fonts.googleapis.com/css?family=UnifrakturMaguntia');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+body{
+background-color:#000;
+overflow:hidden;
+
+}
+
+
+::-webkit-scrollbar
+{
+	width: 0px;
+	background-color: transparent;
+}
+
+#imagething{
+width:500px;
+height:1000px;
+background-image:url(https://cdn.discordapp.com/attachments/397932318934827028/419557710636515329/e049352c2de28b4da0f1bde210b59994.png);
+position:absolute;
+background-repeat:no-repeat;
+background-size:100%;
+top:50%;
+left:50%;
+
+margin-top:-350px;
+margin-left:-250px;
+z-index:5;
+}
+
+#image{
+background-image:url(https://i.imgur.com/sqAAUsM.png);
+background-size:100%;
+width:300px;
+height:500px;
+background-repeat:no-repeat;
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-380px;
+filter:drop-shadow(0px 0px 10px #000);
+z-index:10;
+}
+
+#backgroundbox{
+width:475px;
+height:350px;
+background-color:#222;
+position:absolute;
+top:50%;
+left:50%;
+z-index:9;
+margin-left:-237.5px;
+margin-top:15px;
+box-shadow:0px 0px 10px 0px #000;
+opacity:0;
+transition:1s;
+transition-delay:999999999s;
+background-image:url(https://www.transparenttextures.com/patterns/concrete-wall-2.png);
+}
+
+body:hover #backgroundbox{
+opacity:1;
+transition-delay:2s;
+}
+
+#box1{
+width:170px;
+height:290px;
+padding:5px;
+background-color:#222;
+box-shadow:0px 0px 10px 0px #000;
+position:absolute;
+top:0px;
+right:0px;
+margin-right:20px;
+margin-top:25px;
+overflow:auto;
+font-family: 'Muli', sans-serif;
+font-size:7pt;
+color:#fff;
+text-align:center;
+}
+
+#box2{
+width:230px;
+height:140px;
+padding:5px;
+background-color:#222;
+box-shadow:0px 0px 10px 0px #000;
+position:absolute;
+top:0px;
+left:0px;
+margin-left:20px;
+margin-top:25px;
+overflow:auto;
+font-family: 'Muli', sans-serif;
+font-size:7pt;
+color:#fff;
+}
+
+#box3{
+width:230px;
+height:120px;
+padding:5px;
+background-color:#222;
+box-shadow:0px 0px 10px 0px #000;
+position:absolute;
+bottom:0px;
+left:0px;
+margin-left:20px;
+margin-bottom:25px;
+overflow:auto;
+font-family: 'Muli', sans-serif;
+font-size:7pt;
+color:#fff;
+}
+
+#sonarcontainer{
+width:500px;
+height:725px;
+position:absolute;
+background-repeat:no-repeat;
+background-size:100%;
+top:50%;
+left:50%;
+margin-top:-350px;
+margin-left:-250px;
+z-index:6;
+overflow:hidden;
+}
+.sonar {
+background-color:transparent;
+width:20px;
+height:20px;
+border-radius:50%;
+border:solid 1px #fff;
+animation:sonar 5s infinite;
+position:absolute;
+top:50%;
+left:50%;
+margin-left:130px;
+margin-top:-20px;
+}
+
+@keyframes sonar{
+0%{
+width:20px;
+height:20px;
+}
+100%{
+width:1000px;
+height:1000px;
+margin:-500px;
+}
+}
+
+.p-1{
+animation:sonar 5s .5s infinite;
+}
+.p-2{
+animation:sonar 5s 1s  infinite;
+
+}
+.p-3{
+animation:sonar 5s 1.5s infinite;
+
+}
+.p-4{
+animation:sonar 5s 2s infinite;
+
+}
+.p-5{
+animation:sonar 5s 2.5s infinite;
+
+}
+.p-6{
+animation:sonar 5s 3s infinite;
+
+}
+.p-7{
+animation:sonar 5s 3.5s infinite;
+
+}.p-8{
+animation:sonar 5s 4s infinite;
+
+}.p-9{
+animation:sonar 5s 4.5s infinite;
+
+}.p-10{
+animation:sonar 5s 5s infinite;
+}
+
+h1{
+position:absolute;
+font-size:60pt;
+font-family: 'UnifrakturCook', cursive;
+color:#000;
+background: url(https://78.media.tumblr.com/1da52d55f04580bea45fc6c61da4b969/tumblr_o0ehbe85nH1rba9llo1_500.gif) ;
+background-size:100%;
+background-position: 0px -150px;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+margin-top:-80px;
+}
+
+h2{
+font-size:15pt;
+font-family: 'UnifrakturCook', cursive;
+color:red;
+text-shadow: 0px 0px 5px 0px #000;
+margin-top:-5px;
+margin-bottom:0px;
+text-align:center;
+}
+
+a{
+color:red;
+text-decoration:none;
+transition:.5s;
+}
+
+a:hover{
+color:gold;
+}
+</style>
+
+<div id="imagething"></div>
+<div id="backgroundbox">
+<h1>Daredevil</h1>
+<div id="box1">
+<h2>Headcanons</h2>
+Matthew is clinically blind and even with his radar sense he can't do things like watch movies or tv. However he enjoys theater more than he can admit, catching up on all the latest trends in Broadway. <br> <br>
+Even though he is a beacon of justice he has a very self-destructive outlook on life stemming from his depression, so besides him almost getting killed many times during his night runs, he indulges himself in drug usage and heavy drinking now and then. <br> <br>
+His success as a lawyer did not make him any less broke, Nelso and Murdock has been on the verge of closing many times in the past, only through the patronage of some of their highest profile clients that they are somehow still afloat. <br> <br>
+Matthew has a great deal of respect for professional and amateur boxing leagues, trying his best to never miss a fight if they happen in New York. <br> <br>
+Has done very little traveling in his life, at least not for pleasure, seeing that the longer he stays away from Hell's Kitchen the more crime may pile up. <br> <br>
+He secretly owns a boxing academy less than a block from where he lives, he secretly trains there during the late evenings. 
+</div>
+<div id="box2">
+<h2>Man without fear</h2>
+<span style="float: left; ">Name</span> <span style="float: right;">Matthew "Matt" Murdock</span><br>
+<span style="float: left; ">Age</span> <span style="float: right;">Early 30s</span><br>
+<span style="float: left; ">Gender</span> <span style="float: right;">Male</span><br>
+<span style="float: left; ">Occupation</span> <span style="float: right;">Attorney at law</span><br>
+<span style="float: left; ">Affiliation</span> <span style="float: right;">Defenders</span><br>
+<span style="float: left; ">Base of Operations</span> <span style="float: right;">Hell's Kitchen </span><br>
+<span style="float: left; ">Height</span> <span style="float: right;">5'11"</span><br>
+<span style="float: left; ">Weight</span> <span style="float: right;">185 lbs (84 kg)</span><br>
+<span style="float: left; ">Eyes</span> <span style="float: right;">Blue</span><br>
+<span style="float: left; ">Hair</span> <span style="float: right;">Red</span><br>
+<span style="float: left; ">Status</span> <span style="float: right;"><a target="_blank" href="https://2.roleplay.chat/profile.php?user=Black-Cat">Working things out</a></span><br>
+</div>
+<div id="box3">
+<h2>Out of Character</h2>
+Code was made by yours truly, please don't steal it, if you want something like this hit me up in the DMs. <br>
+My take coupled with influences from the comics and the Netflix series. <br>
+Marvel Comics, Earth - 616 <br>
+Comics Universe RP highly preferred <br>
+PM Friendly, Smut acceptable, T1 fighting. <br>
+
+</div>
+</div>
+<div id="sonarcontainer">
+<div class="sonar"></div>
+<div class="sonar p-1"></div>
+<div class="sonar p-2"></div>
+<div class="sonar p-3"></div>
+<div class="sonar p-4"></div>
+<div class="sonar p-5"></div>
+<div class="sonar p-6"></div>
+<div class="sonar p-7"></div>
+<div class="sonar p-8"></div>
+<div class="sonar p-9"></div>
+<div class="sonar p-10"></div>
+</div>
+<div id="image"></div>
