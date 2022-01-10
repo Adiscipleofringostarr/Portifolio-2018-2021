@@ -1,0 +1,459 @@
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+body{
+background-color:#22272b;
+overflow:hidden;
+}
+
+::-webkit-scrollbar
+{
+	width: 0px;
+	background-color: transparent;
+}
+
+
+
+#box{
+background-color:#2d383a;
+width:900px;
+height:500px;
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-250px;
+margin-left:-450px;
+border:solid #dadada 2px;
+overflow:hidden; 
+}
+
+#splat1{
+background-image:url(http://www.onlygfx.com/wp-content/uploads/2016/08/paint-splatter-2.png);
+background-size:100%;
+background-repeat:no-repeat;
+width:800px;
+height:400px;
+position:absolute;
+
+top:100px;
+left:-200px;
+z-index:5;
+}
+
+#splat2{
+background-image:url(http://www.pngall.com/wp-content/uploads/2016/03/Splatter-PNG-Pic.png);
+background-size:100%;
+background-repeat:no-repeat;
+width:800px;
+height:800px;
+position:absolute;
+
+top:-100px;
+right:-300px;
+}
+
+#splat3{
+background-image:url(http://www.pngall.com/wp-content/uploads/2016/03/Splatter-PNG-HD.png);
+background-size:100%;
+background-repeat:no-repeat;
+width:800px;
+height:800px;
+position:absolute;
+
+top:-300px;
+left:-100px;
+}
+
+
+#guzma{
+width:500px;
+height:500px;
+position:absolute;
+background-image:url();
+background-size:100%;
+left:50%;
+top:50%;
+margin-top:-260px;
+margin-left:150px;
+z-index:10;
+opacity:0;
+}
+
+
+#link{
+width:250px;
+height:250px;
+position:absolute;
+top:50%;
+left:50%;
+margin-left:-125px;
+margin-top:-125px;
+z-index:99;
+animation:floating 3s infinite;
+}
+
+#link a{
+width:250px;
+height:250px;
+background-image:url(http://orig15.deviantart.net/2865/f/2016/224/d/6/team_skull_by_birb_ebooks-dadjpl0.png);
+background-size:100%;
+background-repeat:no-repeat;
+display:block;
+filter:drop-shadow(0px 0px 20px #fff);
+ -webkit-animation-name: rumble;
+ -webkit-animation-duration: .17s;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-timing-function: linear;
+ -webkit-transform: scale(1) rotate(0deg);
+}
+
+@keyframes floating {
+ from { transform: translate(0, -10px); }
+ 65% { transform: translate(0, 5px); }
+ to { transform: translate(0, -10px); } 
+}
+
+@-webkit-keyframes rumble {
+ 0% {
+ -webkit-transform: scale(1) rotate(2deg);
+ }
+ 25% {
+ -webkit-transform: scale(1) rotate(-2deg);
+ }
+ 50% {
+ -webkit-transform: scale(1) rotate(2deg);
+ }
+ 75% {
+ -webkit-transform: scale(1) rotate(-2deg);
+ }
+ 100% {
+ -webkit-transform: scale(1) rotate(2deg);
+ }
+}
+
+#box1{
+ border-radius: 65px 15px 65px 15px;
+width:405px;
+height:230px;
+border:solid 1px #dadada;
+background-color:#2d383a;
+position:absolute;
+z-index:1;
+margin-left:25px;
+margin-top:25px;
+opacity:0;
+overflow:auto;
+ font-family: 'Play', sans-serif;
+ font-size:11pt;
+ color:#dadada;
+text-align: justify; 
+padding:10px;
+background-image:url(http://www.newdesignfile.com/postpic/2013/07/horizontal-line-patterns_253071.png);
+background-size:100%;
+
+}
+
+#box2{
+ border-radius: 45px 15px 45px 15px;
+width:405px;
+height:155px;
+border:solid 1px #dadada;
+background-color:#2d383a;
+position:absolute;
+z-index:1;
+overflow:auto;
+margin-left:25px;
+margin-top:300px;
+opacity:0;
+ font-family: 'Play', sans-serif;
+ font-size:11pt;
+ color:#dadada;
+text-align: justify; 
+padding:10px;
+background-image:url(http://www.newdesignfile.com/postpic/2013/07/horizontal-line-patterns_253071.png);
+background-size:100%;
+}
+
+#box3{
+ border-radius: 5px 25px 5px 25px;
+width:100px;
+height:450px;
+border:solid 1px #dadada;
+background-color:#2d383a;
+position:absolute;
+z-index:1;
+margin-left:475px;
+margin-top:25px;
+opacity:0;
+background-image:url(http://www.newdesignfile.com/postpic/2013/07/horizontal-line-patterns_253071.png);
+background-size:100%;
+}
+
+h1{
+ font-family: 'Play', sans-serif;
+ font-size:18pt;
+ color:#dadada;
+ text-align:center;
+margin-top:0px;
+margin-bottom:0px;
+letter-spacing:5px;
+}
+
+h2{
+ font-family: 'Play', sans-serif;
+ font-size:15pt;
+ color:#dadada;
+ text-align:center;
+margin-top:10px;
+margin-bottom:0px;
+}
+
+
+#boxback{
+width:300px;
+height:250px;
+border:solid 4px #dadada;
+position:absolute;
+z-index:1;
+margin-left:200px;
+margin-top:125px;
+opacity:0;
+}
+
+
+
+.inksplat{
+width:0px;
+height:500px;
+position:absolute;
+left:0px;
+background-image:url(http://i.imgur.com/NKXu0g3.png);
+background-size:1200px;
+background-repeat:no-repeat;
+}
+
+
+@keyframes skull{
+from{ width:0px; }
+to{ width:1500px;}
+}
+
+#container1{
+width:1000px;
+height:800px;
+position:absolute;
+top:30%;
+left:0px;
+overflow:hidden;
+z-index:5;
+}
+
+#container2{
+width:1200px;
+height:800px;
+position:absolute;
+top:20%;
+left:-30%;
+overflow:hidden;
+z-index:5;
+transform:rotate(30deg);
+}
+
+#container3{
+width:1000px;
+height:800px;
+position:absolute;
+top:-10%;
+left:0px;
+overflow:hidden;
+z-index:5;
+transform:rotate(90deg);
+}
+
+#container4{
+width:1000px;
+height:800px;
+position:absolute;
+top:-70%;
+left:-20%;
+overflow:hidden;
+z-index:5;
+transform:rotate(150deg);
+}
+
+#container5{
+width:1000px;
+height:800px;
+position:absolute;
+top:-50%;
+left:20%;
+overflow:hidden;
+z-index:5;
+transform:rotate(270deg);
+}
+
+#blanket:target #link {
+opacity:0;
+transition:1s;
+z-index:1;
+}
+
+#blanket:target #guzma{
+opacity:1;
+filter:drop-shadow(20px 0px 0px #1a205e);
+transition:3s;
+transition-delay:3s;
+
+}
+
+#blanket:target #splat1 {
+opacity:0;
+z-index:0;
+transition:1s;
+
+}
+
+#blanket:target #splat2 {
+opacity:0;
+z-index:0;
+transition:1s;
+
+}
+
+#blanket:target #splat3 {
+opacity:0;
+z-index:0;
+transition:1s;
+
+}
+
+#blanket:target .ink1{
+animation:skull .7s 1s; 
+animation-fill-mode: forwards;
+
+}
+
+#blanket:target .ink2{
+animation:skull .7s 1.5s; 
+animation-fill-mode: forwards;
+
+}
+#blanket:target .ink3{
+animation:skull .7s 1.3s; 
+animation-fill-mode: forwards;
+
+}
+#blanket:target .ink4{
+animation:skull .7s 1.7s; 
+animation-fill-mode: forwards;
+
+}
+#blanket:target .ink5{
+animation:skull .9s 2s; 
+animation-fill-mode: forwards;
+
+}
+
+#blanket:target #box1{
+opacity:1;
+transition:.5s;
+transition-delay:3.5s;
+z-index:50;
+
+}
+
+#blanket:target #box2{
+opacity:1;
+transition:.5s;
+transition-delay:3.5s;
+z-index:50;
+
+}
+
+#blanket:target #box3{
+opacity:1;
+transition:.5s;
+transition-delay:3.5s;
+z-index:50;
+
+}
+
+#blanket:target #boxback{
+opacity:1;
+transition:.5s;
+transition-delay:3.7s;
+z-index:45;
+
+}
+
+
+a{
+ color:#999999;
+ text-decoration:none;
+ transition:1s;
+}
+
+a:hover{
+ color:silver;
+
+}
+
+b{
+ text-shadow: 2px 2px #1a205e;
+}
+
+
+
+
+</style>
+<div id="blanket">
+<div id="guzma"></div>
+<div id="box">
+<div id="box1">
+<h1>The Boss</h1>
+<span style="float: left; ">Name</span> <span style="float: right;">Guzma</span><br>
+ <span style="float: left; ">Nickname</span> <span style="float: right;">Boss, Mister Guzma</span><br>
+ <span style="float: left; ">Age</span> <span style="float: right;">Whatever</span><br>
+ <span style="float: left; ">Sexual Preference</span> <span style="float: right;">Women</span><br>
+ <span style="float: left; ">Relationship Status</span> <span style="float: right;">Lookin' for trouble?</span><br>
+ <span style="float: left; ">Occupation</span> <span style="float: right;">Ex-leader of team skull, trainer</span><br>
+ <span style="float: left; ">Height</span> <span style="float: right;">6'5 (200 centimeters)</span><br>
+ <span style="float: left; ">Weight</span> <span style="float: right;">190lb</span><br>
+ <span style="float: left; ">Eyes</span> <span style="float: right;">Black</span><br>
+ <span style="float: left; ">Hair</span> <span style="float: right;">Silver</span><br><br>
+<h1>ITS'S YA BOY</h1>
+</div>
+<div id="box2">
+<h1>OOC</h1>
+<b>00</b> This profile was made by me, if you want a code just message me or send an email to <a href="">Hound of Tindalos</a> if you want to commission a profile!<br>
+<b>01</b>PM Friendly to an extent<br>
+<b>02</b> Smut + Story is adored, darker themes preferred.<br>
+<b>03</b>This is the version of Guzma after the end of Sun/Moon.<br>
+<b>04</b><br>
+<b>05</b><br>
+</div>
+<div id="box3">
+<h2>Pokés</h2>
+</div>
+<div id="boxback"></div>
+<div id="container1">
+<div class="inksplat ink1"> </div>
+</div>
+<div id="container2">
+<div class="inksplat ink2"> </div>
+</div>
+<div id="container3">
+<div class="inksplat ink3"> </div>
+</div>
+<div id="container4">
+<div class="inksplat ink4"> </div>
+</div>
+<div id="container5">
+<div class="inksplat ink5"> </div>
+</div>
+<div id="splat1"></div>
+<div id="splat2"></div>
+<div id="splat3"></div>
+<div id="link"><a href="#blanket"></a></div>
+</div>
