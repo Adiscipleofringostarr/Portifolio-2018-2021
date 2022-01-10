@@ -1,0 +1,289 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+body {
+  background-color:#fff;
+  overflow:hidden;
+}
+
+::-webkit-scrollbar
+{
+  width:0px;
+	background-color: transparent;
+}
+
+
+#imagecontainer{
+height:850px;
+ width:600px;
+ position:absolute;
+ right:0px;
+ bottom:0px;
+ z-index:15;
+clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+}
+
+#image{
+ background-image:url(https://i.imgur.com/8DPDoYF.png);
+ background-size:contain;
+ background-repeat:no-repeat;
+height:850px;
+ width:600px;
+ z-index:15;
+ filter:drop-shadow(0px 0px 10px #fff);
+}
+
+#thingcontainer{
+width:404px;
+height:604px;
+background-color:transparent;
+ position:absolute;
+ z-index:14;
+ right:125px;
+ bottom:125px;
+opacity:1;
+clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+}
+
+#thing{
+ width:400px;
+ height:600px;
+ background-color:transparent;
+ border:solid 2px #000;
+ position:absolute;
+z-index:1;
+bottom:0px;
+right:0px;
+}
+
+#bgcontainer{
+  position:absolute;
+   right:150px;
+ bottom:150px;
+ z-index:11;
+  width:400px;
+ height:600px;
+ overflow:hidden;
+  z-index:13;
+clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+}
+
+
+
+
+#bg{
+ background-image:url(https://i.pinimg.com/564x/fc/8c/8b/fc8c8b3f7828eb949fee9bd29dc01037.jpg);
+ background-size:100%;
+ background-repeat:no-repeat;
+ width:450px;
+ height:700px;
+position:absolute;
+z-index:1;
+ filter:grayscale(100%);
+}
+
+
+#line{
+ height:800px;
+ width:600px;
+ background-color:transparent;
+ position:absolute;
+ border-right:solid 2px #000;
+ bottom:20px;
+right:60px;
+z-index:15;
+}
+
+#line2{
+ height:800px;
+ width:600px;
+ background-color:transparent;
+ position:absolute;
+ border-right:solid 2px #000;
+ bottom:20px;
+right:60px;
+ z-index:15;
+}
+
+#line3{
+ height:800px;
+ width:600px;
+ background-color:transparent;
+ position:absolute;
+ border-right:solid 2px #000;
+ bottom:20px;
+right:60px;
+ z-index:15;
+  
+}
+
+#text{
+ font-family: 'Open Sans Condensed', sans-serif;
+font-size:40pt;
+position:absolute;
+bottom:400px;
+right:250px;
+transition:2s;
+z-index:99;
+
+}
+
+#text a{
+  
+ text-decoration:none;
+ color:#000;
+}
+
+#text:hover {
+letter-spacing:10px;
+right:200px;  
+}
+
+#blanket:target #line {
+  right:600px;
+  transition:1s;
+
+}
+
+#blanket:target #bgcontainer{
+clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+transition:0.69s;
+transition-delay:.1s;
+}
+
+#blanket:target #line2 {
+  right:600px;
+  transition:1s;
+ 
+ transition-delay:1s;
+}
+
+#blanket:target #thingcontainer{
+clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+transition:0.55s;
+transition-delay:1.1s;
+}
+
+#blanket:target #line3 {
+  right:600px;
+  transition:1s;
+transition-delay:2s;
+}
+
+#blanket:target #imagecontainer{
+clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+transition:0.59s;
+transition-delay:2.1s;
+}
+
+#blanket:target #text{
+ opacity:0;
+ transition:.5s;
+ z-index:0;
+}
+
+#box1{
+ width:380px; 
+ height:180px;
+ padding:15px;
+ background-color:#fff;
+ position:absolute;
+ bottom:450px;
+ right:700px;
+ z-index:20;
+  font-family: 'Open Sans Condensed', sans-serif;
+color:#000;
+overflow:auto;
+opacity:0;
+}
+
+#box2{
+  width:380px; 
+ height:180px;
+ padding:10px;
+ background-color:#fff;
+ position:absolute;
+ bottom:200px;
+ right:650px;
+ z-index:20;
+   font-family: 'Open Sans Condensed', sans-serif;
+color:#000;
+opacity:0;
+overflow:auto;
+
+}
+
+#blanket:target #box1{
+ opacity:1;
+ transition:1s;
+transition-delay:3s;
+}
+
+#blanket:target #box2{
+ opacity:1;
+ transition:1s;
+transition-delay:3s;
+}
+
+.firstcharacter {
+  color: #000;
+  float: left;
+  font-size: 30pt;
+  line-height: 30px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 3px;
+}
+
+
+#box1 a{
+text-decoration:none;
+transition:1s;
+color:#000;
+}
+
+#box1 a:hover{
+color:gold;
+}
+</style>
+
+<div id="blanket">
+<div id="imagecontainer">
+<div id="image"></div>
+</div>
+
+<div id="thingcontainer">
+<div id="thing"></div>
+</div>
+
+<div id="bgcontainer">
+<div id="bg"></div>
+</div>
+
+
+<div id="line"></div>
+<div id="line2"></div>
+<div id="line3"></div>
+
+<div id="text"><a href="#blanket">Follow me?</a></div>
+
+<div id="box1"> 
+<font style="float:left; color:#a76000; "><b>Name</b></font> <font style="float:right">Evan Katsuhara</font><br>
+<font style="float:left; color:#a76000; "><b>Ethinicity</b></font> <font style="float:right">Mixed(Caucasian/Asian)</font><br>
+<font style="float:left; color:#a76000; "><b>Age</b></font> <font style="float:right">20</font><br>
+<font style="float:left; color:#a76000; "><b>Height/Weight</b></font> <font style="float:right">6'1"(185cm)/202lbs(91kg)</font><br>
+<font style="float:left; color:#a76000; "><b>Personality</b></font> <font style="float:right">Carefree, easygoing, dedicated</font><br>
+<font style="float:left; color:#a76000; "><b>Species</b></font> <font style="float:right">Metahuman</font><br>
+<font style="float:left; color:#a76000; "><b>Ability</b></font> <font style="float:right">Portal Creation/Manipulation</font><br>
+<font style="float:left; color:#a76000; "><b>Sexuality</b></font> <font style="float:right">Bi</font><br>
+<font style="float:left; color:#a76000; "><b>Relationship</b></font> <font style="float:right">Single</font><br>
+<font style="float:left; color:#a76000; "><b>Handicap</b></font> <font style="float:right">Lost his right foot. <a href="">Uses Prosthetics</a>.</font><br>
+
+</div>
+<div id="box2"> <span class="firstcharacter">E</span>van is the catalyst to energy coming from another plane of existence dubbed the "Spotted Dimension". A seemingly infinite white room where all his portals reside. The Spotted dimension is a place beyond space and time. He can use that energy to create portals that link from his dimension to the Spotted Dimension and then back thus making him a teleporter. Not only through space, but sometimes through time as well. There were several occasions where Evan teleported forward or backward in time although that ability is still not conscious, just another one of the Spotted Dimension's many secrets.<br><br>
+ <span class="firstcharacter">H</span>is portals, however, have special distinctive properties that make them incredibly useful. For example, there can be different exits to the same entrance portal which can have the object entering the portal be multiplied on exit. This can be used offensively in a fight as well as to confuse and diverge people's attention. Not just matter, but sound can also be multiplied. Although matter has the tendency to decay once it is multiplied for long. The second property of his portals also has to do with the object on entry being altered on exit. This time it is the size. A portal can be made bigger so the object leaving it also increases in size. That can be used to devastating effects offensively. Evan is still training to increase the size of the portals he can conjure as well as the number of simultaneous portals he can conjure at the same time. Right now his limit is a circle 5 meters wide and 5 to 6 portals linking to the same entry point at once. The limits of the place where he can create the portals is in a 10 mile radius of the entryway. 
+
+ </div>
