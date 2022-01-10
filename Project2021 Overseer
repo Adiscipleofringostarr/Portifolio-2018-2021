@@ -1,0 +1,1175 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+body{
+background-color:#111;
+overflow:hidden;
+}
+
+::-webkit-scrollbar
+{
+	width: 4px;
+height:6px;
+}
+
+
+#white{
+width:900px;
+height:1100px;
+background-color:#fff;
+position:absolute; 
+top:0px;
+left:50%;
+background-image: url("https://www.transparenttextures.com/patterns/paper.png");
+background-size:100%;
+margin-top:350px;
+margin-left:-500px;
+z-index:2;
+padding:50px;
+opacity:1;
+z-index;10;
+}
+
+#white a{
+color:#fff;
+position:absolute;
+font-family: 'Lato', sans-serif;
+font-size:25pt;
+position:absolute;
+top:0px;
+right:0px;
+text-decoration:none;
+opacity:0.6;
+z-index:99;
+display:block;
+margin-right:-150px;
+margin-top:300px;
+}
+
+#white a:hover{
+animation:blink .4s infinite alternate;
+}
+
+@keyframes blink{
+0%{opacity:0.6;
+}
+100%{opacity:0;
+}
+}
+
+.triangle{
+clip-path: polygon(0 0, 0 100%, 100% 50%);
+width:30px;
+height:30px;
+background-color:#fff;
+position:absolute;
+margin-top:-30px;
+margin-left:140px;
+}
+
+#header1{
+font-family: 'Lato', sans-serif;
+font-size:35pt;
+color:#000;
+opacity:0.6;
+}
+
+#header2{
+font-family: 'Cutive Mono', monospace;
+font-size:15pt;
+color:#000;
+text-align:justify;
+
+}
+
+#header3{
+font-family: 'Cutive Mono', monospace;
+font-size:11pt;
+color:#000;
+text-align:justify;
+}
+
+.redacted span {
+  position: relative;
+  white-space: pre;
+}
+
+.redacted span::after {
+    background: black;
+    border-radius: 0.1em;
+    box-shadow: 0 0 1px rgba(0,0,0,0.35);
+    content: " ";
+    width: 100%;
+    height: 1.2em;
+    left: 0;
+    position: absolute;
+    transform: skewY(-5deg) rotate(5deg);
+  }
+
+.redacted2 span {
+  position: relative;
+  white-space: pre;
+}
+
+.redacted2 span::after {
+    background: white;
+    border-radius: 0.1em;
+    box-shadow: 0 0 1px rgba(0,0,0,0.35);
+    content: " ";
+    width: 100%;
+    height: 1.2em;
+    left: 0;
+    position: absolute;
+    transform: skewY(-5deg) rotate(5deg);
+  }
+
+#outsidebox{
+background-color:white; 
+width:800px;
+height:300px;
+position:absolute;
+top:50%;
+left:50%;
+margin-left:-700px;
+margin-top:-275px;
+overflow:auto;
+padding:50px;
+opacity:0;
+z-index;1;
+}
+
+#overseer1{
+background-image:url(https://media.discordapp.net/attachments/363846131928530946/796088529419239484/valentina-remenar-honey-by-valentina-remenar-wip.png?width=587&height=663);
+background-size:100%;
+width:400px;
+height:400px;
+background-repeat:no-repeat;
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-275px;
+margin-left:200px;
+opacity:0;
+z-index;1;
+
+}
+#overseer1:hover{
+background-image:url(https://i.imgur.com/r6cpIDX.jpg);
+transition:1s;
+
+}
+#dossier{
+width:750px;
+height:auto;
+border:solid 3px #000;
+padding:25px;
+}
+
+.extratext1{
+font-family: 'Lato', sans-serif;
+color:#fff;
+font-size:10pt;
+position:absolute;
+left:0px;
+top:0px;
+margin-left:410px;
+width:150px;
+height:auto;
+}
+
+#overseer1 a{
+color:#fff;
+position:absolute;
+font-family: 'Lato', sans-serif;
+font-size:25pt;
+position:absolute;
+top:0px;
+right:0px;
+text-decoration:none;
+opacity:0.6;
+z-index:99;
+display:block;
+margin-right:-150px;
+margin-top:350px;
+}
+
+#overseer1 a:hover{
+animation:blink .4s infinite alternate;
+}
+
+#overseer2 a:hover{
+animation:blink .4s infinite alternate;
+}
+
+#overseer3 a:hover{
+animation:blink .4s infinite alternate;
+}
+
+#overseer2{
+background-image:url(https://i.imgur.com/cEAvjJy.png);
+background-position:0px, -100px;
+width:1200px;
+height:280px;
+background-size:100%;
+background-repeat:no-repeat;
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-135px;
+margin-left:-600px;
+z-index:1;
+opacity:0;
+
+}
+
+#overseer2:hover{
+background-image:url(https://i.imgur.com/REfusSX.jpg);
+transition:1s;
+}
+
+#overseer2 a{
+color:#fff;
+position:absolute;
+font-family: 'Lato', sans-serif;
+font-size:25pt;
+position:absolute;
+top:0px;
+right:0px;
+text-decoration:none;
+opacity:0.6;
+z-index:99;
+display:block;
+margin-right:-50px;
+margin-top:300px;
+}
+
+#white2{
+width:950px;
+height:650px;
+background-color:#fff;
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-350px;
+margin-left:-500px;
+z-index:1;
+padding:25px;
+opacity:0;
+
+}
+
+#dossier2{
+border:solid 3px #000;
+width:950px;
+height:650px;
+}
+
+#textdossier2a{
+width:900px;
+height:200px;
+background-color:transparent;
+padding:25px;
+}
+
+.header4{
+font-family: 'Lato', sans-serif;
+color:#000;
+font-size:20pt;
+line-height:20px;
+}
+
+#textdossier2b{
+width:900px;
+height:200px;
+background-color:transparent;
+padding:25px;
+position:absolute;
+bottom:0px;
+margin-bottom:-50px;
+}
+
+#header5{
+font-family: 'Cutive Mono', monospace;
+font-size:9pt;
+color:#000;
+text-align:justify;
+}
+.extratext2{
+font-family: 'Lato', sans-serif;
+color:#fff;
+font-size:10pt;
+position:absolute;
+left:0px;
+top:0px;
+margin-left:1220px;
+width:150px;
+height:auto;
+}
+
+#overseer3{
+background-image:url(https://i.imgur.com/S5smDYT.png);
+background-size:100%;
+background-repeat:no-repeat;
+width:500px;
+height:600px;
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-300px;
+margin-left:-600px;
+opacity:0;
+z-index;1;
+transition:1s;
+}
+
+#overseer3:hover{
+background-image:url(https://i.imgur.com/Iw5B5J9.jpg);
+transition:.5s;
+}
+
+#overseer3 a{
+color:#fff;
+position:absolute;
+font-family: 'Lato', sans-serif;
+font-size:25pt;
+position:absolute;
+top:0px;
+right:0px;
+text-decoration:none;
+opacity:0.6;
+z-index:99;
+display:block;
+margin-right:-710px;
+margin-top:500px;
+}
+
+#dossier3{
+background-color:#030303;
+width:500px;
+height:585px;
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-300px;
+margin-left:-100px;
+opacity:0;
+overflow:auto;
+z-index;1;
+
+}
+
+#logtext{
+font-family: 'Cutive Mono', monospace;
+font-size:9pt;
+color:#dadada;
+background-transparent;
+width:450px;
+height:auto;
+padding:25px;
+overflow:auto;
+}
+
+#log1{
+width:450px;
+height:4%;
+background-color:transparent;
+overflow:hidden;
+color:#dadada;
+}
+
+#log1 a{
+background-color:#fff;
+text-decoration:none;
+background-image:url(https://i.imgur.com/WKVcS39.png);
+color:#000;
+width:450px;
+height:25px;
+display:block;
+font-family: 'Raleway', sans-serif;
+font-size:20pt;
+}
+
+.adendum{
+width:350px;
+height:auto;
+background-color:#333;
+padding:25px;
+}
+
+#log2{
+width:450px;
+height:4%;
+overflow:hidden;
+color:#fff;
+}
+
+#log2 a{
+background-color:#fff;
+text-decoration:none;
+color:#000;
+width:535px;
+height:25px;
+display:block;
+background-image:url(https://i.imgur.com/56GI4sF.png);
+}
+
+#log3{
+width:450px;
+height:4%;
+overflow:hidden;
+color:#fff;
+}
+
+#log3 a{
+background-color:#fff;
+text-decoration:none;
+color:#000;
+width:535px;
+height:25px;
+display:block;
+background-image:url(https://i.imgur.com/kSwqjw2.png);
+
+}
+
+#log4{
+width:450px;
+height:4%;
+overflow:hidden;
+color:#fff;
+}
+
+#log4 a{
+background-color:#fff;
+text-decoration:none;
+color:#000;
+width:535px;
+height:25px;
+display:block;
+background-image:url(https://i.imgur.com/VN0h0y7.png);
+
+}
+
+#log5{
+width:450px;
+height:4%;
+overflow:hidden;
+color:#fff;
+}
+
+#log5 a{
+background-color:#fff;
+text-decoration:none;
+color:#000;
+width:535px;
+height:25px;
+display:block;
+background-image:url(https://i.imgur.com/YeND0OR.png);
+
+}
+
+#log6{
+width:450px;
+height:4%;
+overflow:hidden;
+color:#fff;
+}
+
+#log6 a{
+background-color:#fff;
+text-decoration:none;
+color:#000;
+width:535px;
+height:25px;
+display:block;
+background-image:url(https://i.imgur.com/pN8LL6X.png);
+
+}
+
+#log{
+font-family: 'Raleway', sans-serif;
+font-size:120pt;
+color:#fff;
+transform:rotate(90deg);
+position:absolute;
+left:50%;
+top:50%;
+margin-left:350px;
+margin-top:-225px;
+opacity:0;
+z-index;1;
+
+}
+
+.blinkdot{
+font-family: 'Raleway', sans-serif;
+color:#fff;
+position:absolute;
+top:50%;
+left:50%;
+font-size:200pt;
+margin-left:400px;
+margin-top:-175px;
+opacity:0;
+z-index;1;
+}
+
+#OOC{
+right:0px;
+bottom:50px;
+width:auto;
+height:auto;
+font-family: 'Lato', sans-serif;
+font-size:15pt;
+color:#fff;
+opacity:0;
+text-align:right;
+position:absolute;
+}
+
+#OOC a{
+color:#dadada;
+text-decoration:none;
+}
+
+#OOC a:hover{
+animation:blink .4s infinite alternate;
+
+}
+
+
+
+#blanket1:target #white{
+opacity:0;
+transition:.8s;
+z-index:0;
+}
+
+#blanket1:target #outsidebox{
+transition:.8s;
+transition-delay:.2s;
+opacity:1;
+z-index:99;
+}
+#blanket1:target #overseer1{
+transition:.8s;
+transition-delay:.2s;
+opacity:1;
+z-index:99;
+}
+
+#blanket2:target #overseer1{
+opacity:0;
+transition:.8s;
+
+}
+
+#blanket2:target #outsidebox{
+opacity:0;
+transition:.8s;
+}
+
+#blanket2:target #white{
+opacity:0;
+transition:.8s;
+}
+
+#blanket2:target #overseer2{
+opacity:1;
+transition:.8s;
+transition-delay:.2s;
+z-index:150;
+
+}
+
+#blanket2:target #white2{
+opacity:1;
+transition:.8s;
+transition-delay:.2s;
+z-index:99;
+
+}
+
+#blanket3:target #white{
+opacity:0;
+}
+
+#blanket3:target #white2{
+opacity:0;
+transition:.8s;
+}
+
+#blanket3:target #overseer2{
+opavity:0;
+transition:.8s;
+}
+#blanket3:target #overseer3{
+opacity:1;
+
+z-index:99;
+
+}
+
+#blanket3:target #dossier3{
+opacity:1;
+transition:.8s;
+transition-delay:.2s;
+z-index:99;
+
+}
+
+#blanket3:target #log{
+opacity:1;
+transition:.8s;
+transition-delay:.2s;
+z-index:99;
+
+}
+
+#blanket3:target .blinkdot{
+animation:blink .4s infinite alternate;
+transition:.8s;
+transition-delay:.2s;
+z-index:99;
+}
+
+
+#blanketlog1:target #white{
+z-index:99;
+opacity:0;
+}
+#blanketlog1:target #overseer3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog1:target #dossier3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog1:target #log{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog1:target .blinkdot{
+animation:blink .4s infinite alternate;
+z-index:99;
+
+}
+
+#blanketlog2:target #white{
+opacity:0;
+z-index:99;
+
+}
+#blanketlog2:target #overseer3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog2:target #dossier3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog2:target #log{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog2:target .blinkdot{
+animation:blink .4s infinite alternate;
+z-index:99;
+
+}
+
+#blanketlog3:target #white{
+opacity:0;
+z-index:99;
+
+}
+#blanketlog3:target #overseer3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog3:target #dossier3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog3:target #log{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog3:target .blinkdot{
+animation:blink .4s infinite alternate;
+z-index:99;
+
+}
+
+#blanketlog4:target #white{
+opacity:0;
+z-index:99;
+
+}
+#blanketlog4:target #overseer3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog4:target #dossier3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog4:target #log{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog4:target .blinkdot{
+animation:blink .4s infinite alternate;
+z-index:99;
+
+}
+
+#blanketlog5:target #white{
+opacity:0;
+z-index:99;
+
+}
+#blanketlog5:target #overseer3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog5:target #dossier3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog5:target #log{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog5:target .blinkdot{
+animation:blink .4s infinite alternate;
+z-index:99;
+
+}
+
+#blanketlog6:target #white{
+opacity:0;
+z-index:99;
+
+}
+#blanketlog6:target #overseer3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog6:target #dossier3{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog6:target #log{
+opacity:1;
+z-index:99;
+
+}
+#blanketlog6:target .blinkdot{
+animation:blink .4s infinite alternate;
+z-index:99;
+}
+
+
+
+#blanketlog1:target #log1{
+height:470%;
+transition:1s;
+}
+
+#blanketlog1:target #log2{
+height:4%;
+transition:1s;
+}
+
+#blanketlog1:target #log3{
+height:4%;
+transition:1s;
+}
+
+#blanketlog1:target #log4{
+height:4%;
+transition:1s;
+}
+
+#blanketlog1:target #log5{
+height:4%;
+transition:1s;
+}
+
+#blanketlog1:target #log6{
+height:4%;
+transition:1s;
+}
+#blanketlog2:target #log2{
+height:80%;
+transition:1s;
+}
+
+#blanketlog2:target #log1{
+height:4%;
+transition:1s;
+}
+
+#blanketlog2:target #log3{
+height:4%;
+transition:1s;
+}
+
+#blanketlog2:target #log4{
+height:4%;
+transition:1s;
+}
+
+#blanketlog2:target #log5{
+height:4%;
+transition:1s;
+}
+
+#blanketlog2:target #log6{
+height:4%;
+transition:1s;
+}
+
+#blanketlog3:target #log3{
+height:50%;
+transition:1s;
+}
+
+#blanketlog3:target #log2{
+height:4%;
+transition:1s;
+}
+
+#blanketlog3:target #log1{
+height:4%;
+transition:1s;
+}
+
+#blanketlog3:target #log4{
+height:4%;
+transition:1s;
+}
+
+#blanketlog3:target #log5{
+height:4%;
+transition:1s;
+}
+
+#blanketlog3:target #log6{
+height:4%;
+transition:1s;
+}
+
+#blanketlog4:target #log4{
+height:140%;
+transition:1s;
+}
+
+#blanketlog4:target #log2{
+height:4%;
+transition:1s;
+}
+
+#blanketlog4:target #log1{
+height:4%;
+transition:1s;
+}
+
+#blanketlog4:target #log3{
+height:4%;
+transition:1s;
+}
+
+#blanketlog4:target #log5{
+height:4%;
+transition:1s;
+}
+
+#blanketlog4:target #log6{
+height:4%;
+transition:1s;
+}
+
+#blanketlog5:target #log5{
+height:50%;
+transition:1s;
+}
+
+#blanketlog5:target #log2{
+height:4%;
+transition:1s;
+}
+
+#blanketlog5:target #log1{
+height:4%;
+transition:1s;
+}
+
+#blanketlog5:target #log3{
+height:4%;
+transition:1s;
+}
+
+#blanketlog5:target #log4{
+height:4%;
+transition:1s;
+}
+
+#blanketlog5:target #log6{
+height:4%;
+transition:1s;
+}
+
+#blanketlog6:target #log4{
+height:4%;
+transition:1s;
+}
+
+#blanketlog6:target #log2{
+height:4%;
+transition:1s;
+}
+
+#blanketlog6:target #log1{
+height:4%;
+transition:1s;
+}
+
+#blanketlog6:target #log3{
+height:4%;
+transition:1s;
+}
+
+#blanketlog6:target #log5{
+height:4%;
+transition:1s;
+}
+
+#blanketlog6:target #log6{
+height:50%;
+transition:1s;
+}
+
+#blanket4:target #OOC{
+opacity:1;
+transition:.8s;
+transition-delay:.2s;
+}
+#blanket4:target #white{
+opacity:0;
+}
+
+#blanket4:target #overseer3{
+opacity:0;
+transition:.8s;
+}
+
+#blanket4:target #dossier3{
+opacity:0;
+transition:.8s;
+}
+
+#blanket4:target #log{
+opacity:0;
+transition:.8s;
+}
+</style>
+
+<div id="blanket1"><div id="blanket2"><div id="blanket3"><div id="blanket4"><div id="blanketlog1"><div id="blanketlog2"><div id="blanketlog3">
+<div id="blanketlog4"><div id="blanketlog5"><div id="blanketlog6">
+<div id="white">
+<a href="#blanket1">Proceed? <div class="triangle"></div></a>
+<div id="header1"><center>This document is for The Council <br>and The Administrator's eyes only</center></div><br><br>
+<div id="header2"> <p class="redacted">      Any unauthorized access to this document will be viewed as a class 5 security breach. Task Force <span>God's Right Hand</span> will be deployed to apprehend any individuals who had contact with the document. Any resistance will be met with deadly force. In case this document is leaked via electronic means the nuke housed at the site of the original leak will be immediately detonated without further notice. <b>You have been warned.</p>
+</div>
+</div>
+
+<div id="outsidebox">
+<div id="dossier">
+<div id="header1"><center>The Council Dossier<br><br>The Overseer</center></div><br><br>
+<div id="header3">	<p class="redacted">        Male. Caucasian. European descent. Unknown origin (supposedly American). Believed to be one Aaron Webb, born on 8/23/1985 although many accounts acquired via <span>subspace backup from AO-991</span> often contradicts that claim. Allegedly, The Overseer has been around at least 4 XK-Class End-of-the-World Scenarios and 2 ZK-Class Reality Failure Scenarios. How he has survived these is still unknown, but given the extreme time discrepancies it has been surmised that The Overseer is at least <span>10000</span> years old. Images of him have surfaced dating back as far as the late 1800s and paintings dating as early as the 1200s have been found depicting someone who starkly resembles Aaron Webb. When questioned about this he simply laughed saying it was just a coincidence, although analysis by Foundation personnel has found that there is a <span>99.7%</span> match between The Overseer and both the images and the paintings. After the research came to light all that regarding The Overseer was immediately expunged and all personnel involved were relocated and properly amnesticized.<br>
+       Previous to his work with the Foundation, The Overseer was the apparent head of a fringe organization opposite of the Foundation. Their goal was to tamper with facilities, release anomalous items in containment and according to one Dr. <span>Rumbar</span> “Just be a pain in our asses”. Some people credit The Overseer with the creation of that fringe group, but he claims that was the “Other guy” who had to be blamed. The “Other guy” being the man who previously presided the council. All data regarding that man has been expunged to the point it may actually be impossible to know if The Overseer’s predecessor actually existed or not, the only data that might corroborate that claim are documents detailing the <span>Ouroboros</span>Incident. That data, however, has been laced with anti-memetic agents making it inaccessible via any known means, although its existence has been publicly known by Foundation personnel for a few years now. <br>
+       Aaron Webb’s other moniker besides “The Overseer” is “The Usurper” , a title granted to him by the Administrator after the <span>Ouroboros</span> Incident. While still in command of the fringe Organization, Webb managed to systematically assassinate all <span>13</span>members of the previous council before rising to power as the presiding figure of the Foundation. The details of how these assassinations took place, if Webb did it alone or with a group, and, most importantly, why he has joined the Foundation afterwards remains a mystery.<br>
+      	 Although Webb can be considered anomalous himself, much like the other members of the Council, he has shown incredible loyalty to the Foundation. His knowledge of weapons handling, guerrilla tactics and overall warfare has greatly improved the effectiveness of Foundation’s mobile task forces and security detail. While still presiding over the council and keeping things afloat, he, unlike his peers, enjoys making public appearances and joining task forces in the apprehension of anomalous items or individuals. He has, on occasion, contained the anomaly by himself through anomalous means. </p>
+</div>
+</div>
+</div>
+<div id="overseer1">
+<div class="extratext1">One of The Overseer's anomalous traits. <br> Every time a picture of The Overseer is taken his eyes are redacted. This effect also happens while being filmed and sometimes when he is being depicted via drawing. </div>
+<a href="#blanket2">Proceed?<div class="triangle"></div></a>
+</div>
+
+<div id="log">Log</div><div class="blinkdot">.</div>
+<div id="overseer3">
+<a href="#blanket4">END OF LOG<class="triangle"></div></a>
+</div>
+<div id="dossier3">
+<div id="logtext">
+      The members of the council are anomalous enough to warrant them a number in our database, however their work with the Foundation and their overall position in the pecking order gives them immunity to any research The Foundation may carry out. Their anomalies range from their origin as a being from another planet or dimension; their supernatural inclinations; contact with any number of anomalous entities, individuals, or organizations; or even any number of anomalies that may have been assigned to them at birth. Still, the Council's greatest strength is the Foundation itself as they have full control of one of the most secretive and powerful organizations known to man, their nigh limitless funding, their military and scientific assets, and the thousands of anomalies it has in containment. Protocol dictates that anomalies should not be used by Foundation personnel, but that rule does not apply to The Council. Following are some of the items and anomalies The Overseer has entered contact with as well as his overall capabilities:<br><br>
+<div id="log1"><a href="#blanketlog1"></a>
+
+<br>
+<div class="redacted2">      Description: The spear is a 2.5 meters tall pole arm made of an unknown alloy of dark red color forged to resemble intertwined muscle tendons and flesh. Testing with the alloy has shown that it has a genetic makeup and that it closely resembles that of human organic matter.<br>       The alloy is so far impervious to any known forms of damage, even from other anomalies although very few entities have cooperated in attempting to damage the spear. Runes are etched onto the shaft, so far the Foundation has been unable to identify the meaning and origin of the runes, although it has been theorized that the written language is an offshoot of early Sumerian. Attempts to copy those markings onto another weapon has made the weapon turn red and [Data Expunged].<br>       After the on-site nuke was detonated the site of the explosion was dubbed <span>ALO-2129</span>.<br>      After 3 attempts to recover the spear and the loss of 39 members of special MTF <span>"Sword in Stone"</span> it was located and re-contained. The spear' bladed tip ends in two sharp points reminiscent of a military fork spear, although it has shown the ability to morph its shape depending on the situation. <br>
+So far it has changed into:<br><br><br><br><br>
+      The spear's true anomalous properties were discovered after catastrophic containment breach of <span>AEN-1392</span>. The entity walked unimpeded for 18 hours until it reached site <span>92-A</span> where the spear was contained. After it reached a distance of 1km from the facility it started to scream and [DATA EXPUNGED]. <br>
+      After the entity was willingly contained it spoke to personnel saying "It would rather be imprisoned by lesser beings than freed in a world where that 'thing' is allowed to exist". The incident turned heads and The Council immediately authorized testing with <span>AEN-1392</span> and beings with similar threat levels. <br>
+      After extended research, it was theorized that the spear's anomalous traits are that of nullifying any anomalies that entities may have, but for the spear to take effect on any creature a couple of conditions must be met:<br><br>
+       - The entity must call itself a God or it must be perceived as such by a certain number of people.<br><br>
+       - The entity needs to know of the spear's existence.<br><br>
+       - The entity needs to threaten humanity either directly or indirectly.<br><br>
+       Once those factors have taken place the spear displays the following anomalous traits:<br><br>
+       -The spear is completely invisible to the God in question although they can still feel its presence and some have called it "unfathomable".<br><br>
+       - All reality warping capabilities the God may have are nullified. Although any physical traits they may have I.E. speed, strength, knowledge are not. <br><br>
+       - Damage done by the spear is irreversible by any known means while under its influence and damage by other means is greatly increased. <br><br>
+       -Fatal strikes made by the spear are also irreversible while under its influence. So far 3 entities have been permanently eliminated due to the spear's anomalous traits.<br><br>
+
+      The Spear's sphere of influence is about a 3km radius although its effects may last up to 24 hours after exiting its radius fading until fully dissipating. However this area can be boosted by the memetic spread of its image which the Foundation is funding. So far the spear has become a pop culture item, replicas of its image are sold as highly desirable fashionable items and the foundation is currently working on producing an expanded cinematic universe centered around the spear to further boost its memetic potential.<br>
+
+      Currently the spear is being held at site alpha codename Tartarus where 80% of the most dangerous entities contained by the Foundation are located. Initially it seemed like a bad idea, but after the memetic potential it was dubbed to be the best way to contain some of these entities. The foundation is currently attempting to turn some of the most dangerous non-divine anomalies into Gods by artificially starting cults dedicated to them
+so they can be contained in site alpha. The process is still ongoing and it has been inconclusive so far.<br>
+
+      Although the Foundation's main goal is to contain and study anomalies for the betterment of humanity the spear is probably one of its most effective means of contention against insurmountable entities . The problem resides on the Spear's wilder as The Overseer has been the only one capable of wielding it without [DATA EXPUNGED]. Thus The Overseer is in charge of its handling the spear as well as dealing with any immediate threats that may arise in the near future as well as the spear's continuous research and the transfer of its properties onto other weapons. 
+<br><br>
+Addendum AOB-X1
+<br><br>
+The following are the documented contact The Overseer had while wielding the spear.
+<br><br>
+The <span>Ouroboros</span> incident<br>
+[DATA EXPUNGED]
+<br><br>
+
+The Site 13-1 Incident 
+<br><br>
+
+<div class="adendum">      The Council had authorized experimentation with the spear, starting with some of the most dangerous anomalies they had in containment. Unanimously The Council recommended that the first anomaly to be experimented with was <span>AEN-682</span>. The following is a transcript of recovered video footage from Site 13-1. <br><br>
+
+Interviewer: The Overseer<br>
+Interviewee: <span>AEN-682</span>
+<br><br>
+
+[The Overseer enters the containment area. <span>AEN-682</span> is being tied to a wall by acid-resistant chains. After The Overseer is fully inside the perimeter he motions for the chains to be removed and <span>AEN-682</span> falls to the ground. Immediately growling.]<br><br>
+
+The Overseer: Hello <span>682</span> you look well today<br><br>
+
+[<span>682</span> growls towards the man and tries to attack him. A direct current shock of 25 thousand volts was administered to <span>682</span> which apparently made The Overseer very upset as he looked towards the observation area and ordered it to stop.]<br><br>
+
+<span>682</span>: Quit your prattling human, why are you here? People don’t come here unless they want to die.<br><br>
+The Overseer: Yes, well, I don’t plan on dying anytime soon, however I think we’re finally going to teach you a lesson you will not forget so soon.<br><br>
+
+[The Overseer then produces the spear, pulling it from <span>AOB - 3772</span>. He holds it up towards the creature.]<br><br>
+
+The Overseer: Can you see this?<br><br>
+
+<span>682</span>: See what? What are you holding? What is this feeling? <br><br>
+
+[<span>682</span> proceeds to back itself against a corner, showing any kind of fear and/or doubt for the first time since it was contained.]<br><br>
+
+<span>682</span>: Don’t tell me you actually found it. In this backwater? And you are able to wield it? If that’s the case then I’m not the one who should be imprisoned. If you’re letting that thing roam free then this whole place is doomed.<br><br>
+
+[The voice of another person, possibly another member of The Council is heard through the speakers.]<br><br>
+
+Female Voice: Overseer, please stop dawdling, you’re making it upset.<br><br>
+
+ The Overseer: Very well. Sorry, I just find it amusing how it reacted.<br><br>
+
+[The Overseer proceeds to point the spear towards <span>682</span> and it changes into a glaive-like weapon. There is an blood-curdling screech heard from within the containment area. <span>682</span>’s face starts to bloom like a flower before a bright flash is seen and the video feed cuts out.]<br><br>
+
+
+After the incident, 70% of Site 13 was destroyed. The death toll is about 2000. Both <span>AEN-682</span> and The Overseer survived even though they were at the epicenter of the explosion. <span>AEN-682</span>’s arms and legs had been cleanly chopped off after the incident and it was transported to Site Alpha where it currently resides. After the incident it took <span>AEN-682</span> 12 months from getting its limbs chopped off to start regenerating. With that knowledge procedure ‘<span>682</span>-Zeta’ was immediately approved.
+</div>
+<br><br>
+The Unborn incident <br>
+[DATA BLOCKED]
+</div>
+</div>
+<div id="log2"><a href="#blanketlog2"></a><br><br>
+      Description: The Coat of many arms is a light brown, European military-style greatcoat from a period between the late 1500s to the early 1900s. It is without any specific designations or markings, leading researchers to believe it was an original archetype sample, intended to be submitted to military officials for approval as part of a new uniform design. The pattern was either rejected or lost because it was never implemented. It is made of wool and extends below the knee on most individuals. Carbon dating of the coat fibers has been inconclusive, placing its age between the range of 6,200 to 6,400 years old. One explanation is that the wool used to create the coat is perhaps thousands of years old, but the coat itself was cut, sewn, and assembled recently.<br>
+
+      The coat is capable of manifesting numerous arms from within the dark inner lining. When worn, any subject wearing it needs only to open the coat to materialize hands and arms which are somewhat under the subject's control. Most limbs are human in nature and vary in skin tones, length, and strength.<br>
+
+      The space under it is considered to be non-Euclidean in nature and the coat itself divergent from normal dimensions. In one instance, test subject 402M was told to put the coat over his head. Upon doing so, the coat fell to the ground as the test subject disappeared under it. Some time later, fingerprinting of objects that have come into contact with the limbs coming from inside the coat have identified one of the arms as that of subject 402M.
+</div>
+<div id="log3"><a href="#blanketlog3"></a><br><br>
+      Description: The fishing hook is made of a non-anomalous aluminum measuring about 2 inches in height. Etched onto the hook the words “Dr. Wondertainment” can be read. The hook’s anomalous traits come into play when someone casts it. Once someone throws the hook with the intention of ‘catching’ something, the hook will disappear midway through the cast. The effect seen by this effect is like reality is all wobbly. This is when the “seam” appears. Connection between this dimension and another is fully operational and anyone can cross between dimensions as long as the line is still cast. Once the line crosses the seam the connection closes. Certain keywords can be uttered to narrow the search between dimensions. Uttering ‘home’ takes the user to their home dimension.
+
+</div>
+<div id="log4"><a href="#blanketlog4"></a>
+<div class="redacted2"><br><br>      Description: Dr. <span>Wondertainment’s</span> Totally Tubulars are a set of plastic tubes unremarkable besides bearing Dr.<span> Wondertainment’s</span> logo on its side. <br>
+      When someone looks through the tube they will see a city landscape that has been matched with <span>ALO-26</span>. Depending on where one walks the landscape changes, but it is usually the same tall buildings and generally barren imagery is depicted. Tests have been conducted where two people are in the same room looking at each other through the tubes. At that moment subject A and subject B were sucked into the tubes and [DATA EXPUNGED].<br>
+      The tube’s anomalous properties come into play when any entity sticks their hands inside one of the entrances. At that moment the subject’s hand will be transported across time and space to somewhere else. That place is determined entirely on the person who inserts their hand inside. So far the Foundation has observed that whatever power dictates the tube’s anomalous properties has some way to resonate into the person’s innermost desires. Once the entity retrieves their hand from inside the tube they will be holding whatever is needed at that time. The space inside the tube is believed to be non-euclidian and the entrance/exit shapes itself to abnormal size to fit whatever it is that the person needs. <br><br>
+      Following is a list of the most notable items pulled from within the Totally Tubulars:<br><br>
+      - The keys to the subject’s shackles before they were terminated.<br><br>
+
+       -The subject’s deceased daughter, probably snatched from an alternate dimension. The subject proceeded to cry at their deceased daughter before her skin started to bubble and she started crying blood. At that moment her body started to fold into itself before [DATA EXPUNGED]. After the incident Foundation has been advised by <span>AEN-1212</span> to not attempt any time/space snatching or there would be consequences.<br><br>
+
+       - Dr. Palmer who was watching the experiment from the observation deck. She displayed no abnormalities and claimed to have blanked out the moment she was snatched.<br><br>
+
+       - The entire statue of liberty which was later replaced with a faithful copy. The original one is sitting outside of Site-28 and is the Site Director’s pride and joy.<br><br>
+
+       - One of the tubes was given to <span>AEN-073</span>. Directions on its usage were given to them. <span>AEN-073</span> then proceeds to pull a [DATA EXPUNGED]. After massive containment breach and the on-site nuke being detonated a team was sent to retrieve <span>AEN-073</span> that had, unsurprisingly, survived the blast. However, the tube was completely incinerated by the explosion. Testing with anomalies has been forbidden until further orders. 
+</div>
+</div>
+<div id="log5"><a href="#blanketlog5"></a><br><br>
+[DATA BLOCKED]
+
+</div>
+<div id="log6"><a href="#blanketlog6"></a>
+<br>
+[DATA BLOCKED]
+</div>
+
+</div>
+</div>
+
+<div id="OOC">
+<br> - My Code.
+<br> - Art @ <a target="_blank" href="https://twitter.com/tincekmarincek"> Tincek Marincek</a>
+<br> - Character is based off of a lot of stuff, but mainly inspired by the <a target="_blank" href="http://www.scpwiki.com">SCP Foundation</a>. Some stuff is still a WIP.
+<br> - SCPs directly mentioned by name: <a target="_blank" href="http://www.scpwiki.com/scp-262">SCP 262</a>, <a target="_blank" href="http://www.scpwiki.com/scp-682">SCP 682</a>, <a target="_blank" href="http://www.scpwiki.com/ouroboros"> djkaktus' proposal </a>.
+<br> - This character is meant for Dark RP of a fantasy nature. Sci-fi, supernatural and tangential genres are very much appreciated.
+<br> - Smut + Story.
+<br> - Fighting is encouraged, but the character is meant to be a tough matchup for anyone godly or metahuman in nature.
+<a href="#blanket0"> Return to the beginning. </a>
+</div>
+
+
+<div id="overseer2">
+<a href="#blanket3">Proceed?<div class="triangle"></div></a>
+<div class="extratext2">
+<p class="redacted2">Alleged photo taken of The Overseer in October 1917 in <span> Giverny</span>, France after a visit to the painter <span>Money</span> whom The Overseer visited on a number of occasions </p></div>
+</div>
+<div id="white2">
+<div id="dossier2">
+<div id="textdossier2a">
+<center><div class="header4">The Foundation</div></center>
+<div id="header5"><p class="redacted">       The universe is too vast and unpredictable for any one person to be able to explain it all. However, in humanity’s endless search for an answer to questions that have plagued its very existence, a group of individuals has banded together to achieve the impossible. Their initial goal was to truly dig deep into the very fabric of existence, they belonged to no one nation and weren’t bound by any laws. What they did not expect was to find a whole underground network of dark gods, extradimensional beings, extraterrestrial threats and groups of interest that have been roaming the earth for centuries. Thus the Foundation was founded in <span>1761</span>, its original goal was to eliminate these so-called threats. After an Incident that has been expunged from all known records, the Foundation’s primary goal is to contain and study these anomalies for the betterment of humanity and to prevent any anomalous entities, events or objects to threaten our continued existence with utmost secrecy.
+</p></div>
+</div>
+<div id="textdossier2b">
+<center><div class="header4">The Council</div></center>
+<div id="header5"><p class="redacted">       For all intents and purposes The Council does not exist. Anyone that does not have a level 3 or above clearance aren’t allowed to know about The Council’s existence. However, behind any successful institution, there needs to be a strong leadership. The Council is formed by <span>13</span> individuals of high standing in the Foundation that range from powerful reality warpers to alleged extraterrestrial or extradimensional beings. They all have similar jobs of taking care of the foundation and agreeing or disagreeing on hard decisions that must be taken to contain certain anomalies. However, each of them are assigned as a contention plan for certain types of anomalies that the Foundation is aware of and that may threaten humanity, our planet or reality itself sooner or later. The members of the Council and their assigned anomalies are to never be shared even between members of The Council on threat of immediate termination by the Administrator. 
+
+</p></div>
+</div>
+</div>
+
+
