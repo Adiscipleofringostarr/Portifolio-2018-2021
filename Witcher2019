@@ -1,0 +1,621 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900');
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+
+body{
+background-color:gray;
+overflow:hidden;
+}
+
+::-webkit-scrollbar
+{
+	width:0px;
+	background-color: transparent;
+}
+
+#background{
+background-image:url(https://hdqwalls.com/download/artwork-the-witcher-3-wild-hunt-hd-2048x1152.jpg);
+background-size:100%;
+width:100%;
+height:130%;
+filter:blur(5px) brightness(100%);
+position:absolute;
+z-index:1;
+}
+#shadowoverlay{
+width:100%;
+height:130%;
+box-shadow:inset 0px 0px 100px 50px #000;
+position:absolute;
+z-index:2;
+}
+
+
+#thing1{
+width:200px;
+height:750px;
+background-color:#fff;
+position:absolute;
+top:50%;
+left:50%;
+margin-left:-100px;
+margin-top:-400px;
+z-index:3;
+overflow:hidden;
+}
+
+
+#shadowimage{
+background-image:url(https://i.pinimg.com/originals/d1/fe/47/d1fe475915b7dad02ae1466282c6a160.jpg);
+background-size:100%;
+width:1100px;
+height:800px;
+position:absolute;
+background-repeat:no-repeat;
+margin-left:-450px;
+margin-top:200px;
+filter:grayscale(100%);
+opacity:0.8;
+}
+
+#overlay2{
+background: linear-gradient(to top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+width:300px;
+height:1100px;
+position:absolute;
+z-index:10;
+}
+
+#wolf{
+position:absolute;
+z-index:11;
+background-image:url(https://i.imgur.com/g8HEgdS.png);
+background-size:contain;
+width:180px;
+height:180px;
+background-repeat:no-repeat;
+margin-top:25px;
+margin-left:10px;
+filter:drop-shadow(5px 5px 3px rgba(123, 42, 39, 1));
+}
+
+#box1{
+width:300px;
+height:400px;
+background-color:rgba(123, 42, 39, 1);
+position:absolute;
+z-index:12;
+left:50%;
+top:50%;
+margin-top:-50px;
+margin-left:100px;
+overflow:auto;
+}
+
+#one {
+background-color:rgba(123, 42, 39, 1);
+color:#fff;
+width:260px;
+height:310px;
+padding:20px;
+font-family: 'Lato', sans-serif;
+font-size:9pt;
+position:absolute;
+opacity:1;
+z-index:5;
+overflow:auto;
+}
+
+#two, #three {
+background-color:rgba(123, 42, 39, 1);
+color:#fff;
+width:260px;
+height:310px;
+padding:20px;
+font-family: 'Lato', sans-serif;
+font-size:9pt;
+position:absolute;
+overflow:auto;
+opacity:0;
+z-index:0;
+}
+
+.firstcharacter {
+  color: #fff;
+  float: left;
+  font-size: 25pt;
+  line-height: 25px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 3px;
+}
+
+#blanket:target #one{
+opacity:1;
+transition:1s;
+z-index:5;
+}
+
+#blanket:target #two{
+opacity:0;
+transition:1s;
+z-index:0;
+}
+
+#blanket:target #three{
+opacity:0;
+transition:1s;
+z-index:0;
+}
+
+#blanket:target #navi .x1{
+background-color:#fff;
+transition:.5s;
+}
+
+#blanket:target #navi .x2{
+background-color:transparent;
+transition:.5s;
+}
+
+#blanket:target #navi .x3{
+background-color:transparent;
+transition:.5s;
+}
+
+#blanket2:target #one{
+opacity:0;
+transition:1s;
+z-index:0;
+}
+
+#blanket2:target #two{
+opacity:1;
+transition:1s;
+z-index:5;
+}
+
+#blanket2:target #three{
+opacity:0;
+transition:1s;
+z-index:0;
+}
+
+#blanket2:target #navi .x1{
+background-color:transparent;
+transition:.5s;
+}
+
+#blanket2:target #navi .x2{
+background-color:#fff;
+transition:.5s;
+}
+
+#blanket2:target #navi .x3{
+background-color:transparent;
+transition:.5s;
+}
+
+#blanket3:target #one{
+opacity:0;
+transition:1s;
+z-index:0;
+}
+
+#blanket3:target #two{
+opacity:0;
+transition:1s;
+z-index:0;
+}
+
+#blanket3:target #three{
+opacity:1;
+transition:1s;
+z-index:5;
+}
+
+#blanket3:target #navi .x1{
+background-color:transparent;
+transition:.5s;
+}
+
+#blanket3:target #navi .x2{
+background-color:transparent;
+transition:.5s;
+}
+
+#blanket3:target #navi .x3{
+background-color:#fff;
+transition:.5s;
+}
+
+h1{
+font-family: 'Cinzel', serif;
+font-size:15pt;
+color:#fff;
+text-align:center;
+font-weight:700;
+}
+#line{
+width:260px;
+height:1px;
+background-image: linear-gradient(to right,rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+margin-bottom:15px;
+}
+
+h2{
+font-family: 'Cinzel', serif;
+font-size:18pt;
+color:#fff;
+text-align:right;
+font-weight:700;
+position:absolute;
+top:50%;
+left:50%;
+z-index:10;
+margin-left:-390px;
+margin-top:-100px;
+text-shadow:3px 3px 10px #000;
+
+}
+
+#line2{
+width:300px;
+height:2px;
+background-image: linear-gradient(to right,rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+position:absolute;
+top:50%;
+left:50%;
+margin-left:-400px;
+margin-top:-60px;
+z-index:10;
+}
+
+#box2{
+width:300px;
+height:170px;
+position:absolute;
+z-index:10;
+top:50%;
+left:50%;
+margin-top:-50px;
+margin-left:-400;
+overflow:auto;
+}
+
+#box2 a{
+width:300px;
+height:50px;
+display:block;
+float:left;
+background-color:transparent;
+filter:saturate(0%);
+transition:.5s;
+}
+
+#box2 a:hover{
+filter:saturate(100%);
+}
+#navi{
+width:70px;
+height:15px;
+background-color:transparent;
+position:absolute; 
+bottom:0px;
+left:50%;
+margin-left:-35px;
+margin-bottom:20px;
+z-index:10;
+}
+
+#navi a{
+width:10px;
+height:10px;
+border:1px solid #fff;
+background-color:#transparent;
+border-radius:50%;
+float:left;
+display:block;
+margin-left:7px;
+}
+
+#navi .x1{
+background-color:#fff;
+}
+
+#navi .x2{
+background-color:transparent;
+}
+
+#navi .x3{
+background-color:transparent;
+}
+
+
+#geralt{
+background-image:url(https://i.pinimg.com/564x/06/61/01/0661010fab90d5334bd30001a932bcd0.jpg);
+background-size:contain;
+width:400px;
+height:400px;
+background-repeat:no-repeat;
+position:absolute;
+top:50%;
+left:50%;
+margin-top:25px;
+margin-left:-150px;
+z-index:4;
+}
+
+#text1{
+font-family: 'Cinzel', serif;
+color:rgba(123, 42, 39, 1);
+font-size:22pt;
+width:180px;
+text-align:center;
+position:absolute;
+margin-top:200px;
+margin-left:10px;
+z-index:12;
+font-weight:700;
+text-shadow:3px 3px 5px #c4c4c4;
+}
+
+#text2{
+font-family: 'Cinzel', serif;
+color:rgba(123, 42, 39, 1);
+font-size:12pt;
+width:180px;
+text-align:center;
+position:absolute;
+margin-top:400px;
+margin-left:25px;
+z-index:12;
+font-weight:700;
+text-shadow:3px 3px 5px #c4c4c4;
+}
+
+#overlay{
+background-color:#000;
+opacity:0;
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+z-index:0;
+}
+
+
+
+#friend{
+background-image:url(https://i.imgur.com/sRtUng7.png);
+background-size:100%;
+background-repeat:no-repeat;
+width:600px;
+height:730px;
+position:absolute;
+top:50%;
+left:50%;
+margin-left:-300px;
+margin-top:-350px;
+z-index:0;
+opacity:0;
+}
+
+#title a{
+font-size:20pt;
+color:#fff;
+font-family: 'Cinzel', serif;
+font-weight:700;
+position:absolute;
+top:0px;
+left:0px;
+margin-top:30px;
+margin-left:30px;
+text-decoration:none;
+transition:1s;
+
+}
+
+#title a:hover{
+color:silver;
+}
+
+.text{
+width:540px;
+height:580px;
+background-color:transparent;
+position:absolute;
+top:80px;
+left:20px;
+color:#cccac1;
+font-size:15pt;
+font-family: 'Lato', sans-serif;
+padding:10px;
+text-align:justify;
+overflow:auto;
+}
+
+#reset a{
+width:50px;
+height:50px;
+font-size:15pt;
+color:#fff;
+position:absolute;
+text-decoration:none;
+bottom:0px;
+right:20px;
+font-family: 'Lato', sans-serif;
+transition:1s;
+}
+
+#reset a:hover{
+color:silver;
+}
+
+#blanket4:target #overlay{
+opacity:.9;
+z-index:50;
+transition:.5s;
+}
+
+#blanket4:target .z1{
+opacity:1;
+z-index:51;
+transition:.5s;
+}
+
+#blanket5:target #overlay{
+opacity:.9;
+z-index:50;
+transition:.5s;
+}
+
+#blanket5:target .z2{
+opacity:1;
+z-index:51;
+transition:.5s;
+}
+
+#blanket6:target #overlay{
+opacity:.9;
+z-index:50;
+transition:.5s;
+}
+
+#blanket6:target .z3{
+opacity:1;
+z-index:51;
+transition:.5s;
+}
+
+#blanket7:target #overlay{
+opacity:.9;
+z-index:50;
+transition:.5s;
+}
+
+#blanket7:target .z4{
+opacity:1;
+z-index:51;
+transition:.5s;
+}
+
+#blanket8:target #overlay{
+opacity:.9;
+z-index:50;
+transition:.5s;
+}
+
+#blanket8:target .z5{
+opacity:1;
+z-index:51;
+transition:.5s;
+}
+
+#blanket9:target #overlay{
+opacity:.9;
+z-index:50;
+transition:.5s;
+}
+
+#blanket9:target .z6{
+opacity:1;
+z-index:51;
+transition:.5s;
+}
+
+#blanket10:target #overlay{
+opacity:.9;
+z-index:50;
+transition:.5s;
+}
+
+#blanket10:target .z7{
+opacity:1;
+z-index:51;
+transition:.5s;
+}
+
+
+
+#blanketreset:target #overlay{
+opacity:0;
+z-index:0;
+transition:.5s;
+}
+
+#blanketreset:target .z1, #blanketreset .z2, #blanketreset .z3  #blanketreset .z4  #blanketreset .z5 #blanketreset .z6 #blanketreset .z7{
+opacity:0;
+z-index:0;
+transition:.5s;
+}
+</style>
+<div id="blanketreset"><div id="blanket"><div id="blanket2"><div id="blanket3"><div id="blanket4"><div id="blanket5"><div id="blanket6"><div id="blanket7"><div id="blanket8"><div id="blanket9"><div id="blanket10">
+<div id="background"></div>
+<div id="shadowoverlay">
+
+</div>
+
+<div id="overlay"></div>
+
+
+<div id="friend" class="z5">
+<div id="title"><a target="_blank" href="https://roleplay.chat/profile.php?user=Flavien">The Blacksmith</a></div>
+<div class="text">
+Thing
+</div>
+<div id="reset"><a href="#blanketreset">X</a></div>
+</div>
+
+<div id="friend" class="z4">
+<div id="title"><a target="_blank" href="https://roleplay.chat/profile.php?user=Ciri">Cirilla Riannon</a></div>
+<div class="text">
+Thing
+</div>
+<div id="reset"><a href="#blanketreset">X</a></div>
+</div>
+
+<h2>Beloved/Encounters</h2>
+<div id="line2"></div>
+<div id="box2">
+<a href="#blanket7" style="background-image:url(https://i.imgur.com/WF5YV9w.png); border:1px solid #fff; border-radius:10px;"></a>
+
+<a href="#blanket8" style="background-image:url(https://i.imgur.com/OgJdkZy.png); border:1px solid #fff; border-radius:10px;"></a>
+
+</div>
+<div id="box1">
+<div id="navi">
+<a href="#blanket" class="x1"></a><a href="#blanket2" class="x2"></a><a href="#blanket3" class="x3"></a>
+
+</div>
+<div id="one">
+<h1>The Witcher</h1>
+<div id="line"></div>
+<span class="firstcharacter">M</span>any cannot fathom the friendship Geralt of Rivia and I, Dandelion, have shared all these years. When we first began breaking bread together, spiteful tongues said he'd be better off cutting my throat and dumping my body in a hollow tree – before I provoked someone else into doing that same to us both. Those individuals spoke out of pure jealousy, for Geralt was my dearest friend, a fact which he gave ample evidence of on numerous occasions.<br><br>
+I could say a great deal about that world-famous monster hunter, the man known in Elder Speech as Gwynbleidd, or, in our younger (yet no less noble) tongue, as the White Wolf. For Geralt of Rivia is a truly exceptional individual. A brief encounter might tempt one to label him a mere swinger of swords, a simple monster-catcher, a rough-and-tumble practitioner of a dirty trade – but peer closer and you will soon discover he is a man of unplumbed depths, unique views and vast, world-spanning experience.<br><br>
+On the surface, he is introverted, tight-lipped, and one might even say gruff, but underneath lies an overflowing sea of goodwill, good humour, and an honest readiness to help his friends, be it with a bit of sound advice or the masterful application of his blade.<br><br>
+Setting aside cumbersome false modesty, I can say that I know his story better than any man alive. I was with him through hard times and good, helping with wise advice, warm words and razor wit. As a result, I am a vital part of his story, both in its earlier and present portions. It is thus my duty to continue my chronicle and, for the benefit of future generations, put in writing the next chapter of his deeds and exploits.
+</div>
+<div id="two">
+<h1>Recent History</h1>
+<div id="line"></div>
+<span class="firstcharacter">G</span>eralt of Rivia's absence was always a troublesome respite between major happenings. I know that he isn't the harbinger of doom, as jealous writers would unquestionably put it, but knowing that sightings of the white wolf were nothing than elaborate hoaxes made me question where he was, or what he was doing. Witchers have been a scarce breed lately and there is no one I'd rather be hunting monsters. <br><br>
+I wasn't a witness to it, but I've written Geralt's testimony about why he hates magical portals so much. Negative physical feedback aside, he spoke about a time where a sorceress in Redania who had mastered the travel between planes, she deceived the witcher and forced him to cross universes without his consent. He has since forgotten (perhaps due to his unfortunate propensity to amnesia) what happened at the other side which makes the testimony hard to believe, but I've trusted my life to Geralt previously and I would never dare mistrust him. <br><br>
+Little did I know that my suspicions weren't unfounded. Geralt's love and trusted adventure companion, Yennefer of Vengerberg is a woman of, dare I say, idiosyncratic experimentation. Somehow she had found (perhaps by force, knowing about what happened after Geralt returned to our world) the notes and thesis this one Redanian sorceress had written about inter-planar transportation and being the brilliant researcher she was found a way to create a consistent gate between universes. It was an opportunity to give the couple some time off their duties. Vacation. Their destination? A magical hotel, duly named 'resort' that housed a nexus to all sorts of different realities a place that was unquestionably magical.<br><br>
+Geralt expected to find peace, but what he found was a remarkable cast of colorful caricatures and no rest whatsoever as there was no rest for a witcher. That's where the white wolf's story begins anew...
+</div>
+<div id="three">
+<h1>Hunt Journal</h1>
+<div id="line"></div>
+TBA
+</div>
+</div>
+<div id="thing1">
+<div id="text1">Geralt of Rivia</div>
+<div id="wolf"></div>
+<div id="overlay2"></div>
+<div id="shadowimage"></div>
+
+</div>
