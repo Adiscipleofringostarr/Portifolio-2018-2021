@@ -1,0 +1,180 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700');
+
+body{
+background-color:#000;
+overflow:hidden;
+}
+
+#box{
+background-color:#1c1c1c;
+width:600px;
+height:250px;
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-150px;
+margin-left:-300px;
+overflow:hidden;
+}
+
+#image{
+background-image:url(
+https://i.imgur.com/TcZE4ck.png);
+background-size:100%;
+width:250px;
+height:100%;
+background-repeat:no-repeat;
+position:absolute;
+right:0px;
+bottom:0px;
+
+}
+
+#stripe1{
+transform:rotate(-45deg) translate(300px, 0px);
+background: repeating-linear-gradient(
+  #d30f13,
+  #d30f13 30px,
+  transparent 30px,
+  transparent 50px
+);
+width:400px;
+height:300px;
+margin-top:-175px;
+margin-left:75px;
+animation:stripes1 1s 1s;
+animation-fill-mode:forwards;
+}
+
+#stripe2{
+transform:rotate(-45deg) translate(-660px, -3.5px);
+background: repeating-linear-gradient(
+  #d30f13,
+  #d30f13 30px,
+  transparent 30px,
+  transparent 50px
+);
+width:400px;
+height:300px;
+margin-top:-200px;
+margin-left:-20px;
+animation:stripe2 1s 1s;
+animation-fill-mode:forwards;
+}
+
+@keyframes stripes1{
+from{
+transform:rotate(-45deg) translate(300px, 0px);
+}
+to{
+transform:rotate(-45deg) translate(0px, 0px);
+}
+}
+
+@keyframes stripe2{
+from{
+transform:rotate(-45deg) translate(-660px, -3.5px);
+}
+to{
+transform:rotate(-45deg) translate(-260px, -3.5px);
+}
+}
+
+#star{
+width:270px;
+height:270px;
+background-color:#1c1c1c;
+position:absolute;
+z-index:10;
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+top:0px;
+
+}
+
+#info1{
+width:590px;
+height:100px;
+position:absolute; 
+z-index:15;
+padding:5px;
+font-family: 'Roboto Mono', monospace;
+color:#dadada;
+font-size:13pt;
+font-weight:700;
+top:50%;
+left:50%;
+margin-top:100px;
+margin-left:-300px;
+opacity:0;
+animation:appear 1s 2s;
+animation-fill-mode:forwards;
+}
+
+@keyframes appear{
+from{opacity:0;
+}
+to{
+opacity:1;
+}
+}
+b{
+color:#737373;
+}
+
+#info1 a{
+color:#737373;
+text-decoration:none;
+transition:1s;
+}
+
+#info1 a:hover{
+color:#d30f13;
+}
+
+
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+display:none; 
+padding:5px;
+width:320px;
+line-height:14px;
+z-index:10;
+margin-left:-300px;
+margin-top:0px;
+top:50%;
+left:50%;
+position:absolute; 
+}
+
+a.tooltip:hover span {
+display:inline; 
+color:#eee;
+font-size:10px;
+text-align:left;
+line-height:11px;
+background-color:rgba(34, 34, 34, 0.90););
+z-index:99;
+font-family: 'Roboto Mono', monospace;
+color:#dadada;
+} 
+
+<a href="" class="tooltip"><span>Write some shit here</span></a> 
+</style>
+<div id="box">
+<div id="stripe1">
+</div>
+<div id="stripe2">
+</div>
+<div id="image">
+
+</div>
+<div id="star">
+</div>
+</div>
+
+<div id="info1">
+BUCKYBARNES<a class="tooltip">WINTERSOLDIER<span>James Buchanan "Bucky" Barnes, born in 1925, became a soldier during world war 2, receiving training from British command forces and one Steve Rogers that he later found to be Captain America. As 'Bucky', Captain America's ally and a freedom fighter during WW2 they succeeded in many missions until the fateful day where they were riding a secret drone project created by Hydra's Baron Zemo and seemingly died in an explosion, however that only took his left arm as he joined his friend in the English canal and froze to a near-death state, just like Captain America.
+</span></a>SPY<a class="tooltip"><del>KGB</del><span>Barnes was found in 1954 by a Russian spy submarine, the mission's original briefing was to find Captain America's body, however S.H.I.E.L.D. had already retrieved him. After being found, the KGB alongside the remnants of Hydra reprogrammed James into the perfect sleeping cell and the center piece of Soviet's next generation of super soldiers. Armed with an augmented mechanical arm he was the USSR's very own Captain America, they dubbed him the winter soldier and used him to change the course of history in the Soviet Union's favor. Being put into cryostasis when not in active duty, thus prolonging his lifespan. 
+</span></a>MALE<b>PANSEXUAL</b>616CANON<br><a target="_blank" class="tooltip">SINGLE<span>Life is a bitch. </span></a><del>THUNDERBOLTS</del><a class="tooltip">AVENGERS<span>MEME</span></a>ONTHERUN<a href="" class="tooltip">DEADORALIVE<span>MEME</span></a>MANBUN<a target="_blank" href="" class="tooltip">™<span>This is my code @ Hound of Tindalos. <br> PM Friendly to an extent. <br> T1 Fighting (Bucky loves to pick fights). <br> Shitposting to Novella (loves to shitpost). <br> Mostly comic book Barnes, although I enjoy the winter soldier focused movies quite a lot. Just miss me with that 'Man on the wall' thing, that whole concept is awful. </span></a>
+</div>
