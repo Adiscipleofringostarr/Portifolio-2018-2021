@@ -1,0 +1,616 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,800');
+  body {
+ background-color:#000;
+ overflow:hidden;
+}
+ 
+::-webkit-scrollbar
+{
+    width:0px;
+    background-color: transparent;
+}
+ 
+ 
+#stars, #twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+}
+ 
+#stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+  opacity:0;
+  transition:3s;
+  transition-delay:999999s;
+}
+ 
+body:hover #stars{
+ opacity:1;
+   transition-delay:6s;
+}
+ 
+#twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+  animation:move-twink-back 200s linear infinite;
+}
+ 
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+ 
+ 
+ 
+#text{
+ width:730px;
+ padding:10px;
+ color:#fffee7;
+ font-family: "Vollkorn SC";  
+ font-weight:900;
+ font-size:14pt;
+ position:absolute;
+ z-index:9;
+ bottom:0%;
+ right:0%;
+ transition-delay:999999s;
+}
+ 
+ body:hover #text{
+  opacity:0;
+  transition:1s;
+  transition-delay:7s;
+}
+ 
+p{
+ width: 0px;
+ animation: type 2s 6s steps(60, end);
+ overflow:hidden;
+ white-space: nowrap;
+ margin: 0px 0 0 0px;
+ z-index:9;
+ animation-fill-mode: forwards;
+ 
+}
+ 
+p:nth-child(2){
+ animation: type2 3s 1s steps(60, end);
+ animation-fill-mode: forwards;
+ 
+}
+ 
+p:nth-child(3){
+ animation: type3 4.5s 2s steps(60, end), blink-caret .75s step-end infinite;
+ animation-fill-mode: forwards;
+ border-right: .15em solid #eee;
+}
+ 
+p:nth-child(4){
+ animation: type3 5.5s 3s steps(60, end);
+ animation-fill-mode: forwards;
+ 
+}
+ 
+ @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:#fffee7; }
+}
+ 
+ 
+ 
+@keyframes type{
+ from { width: 0; }
+}
+ 
+@keyframes type2{
+ 0%{width: 0; }
+ 40%{width: 0; }
+ 100%{ width: 100%; }
+}
+ 
+@keyframes type3{
+ 0%{width: 0; }
+ 68%{width: 0; }
+ 100%{ width: 100%; }
+}
+@keyframes type4{
+ 0%{width: 0; }
+ 75%{width: 0; }
+ 100%{ width: 100%; }
+}
+ 
+ 
+ 
+ 
+ .chart {
+   fill:transparent;
+  position: absolute;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+  top:50%;
+  left:50%;
+  margin-left:-100px;
+  margin-top:-100px;
+  z-index:99;
+  opacity:0;
+  transition:1s;
+  transition-delay:99999999s;
+ 
+}
+ 
+body:hover .chart{
+  opacity:1;
+  transition-delay:9s;
+}
+ 
+ 
+ 
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ 
+ .outer {
+ 
+  stroke: #fffee7;
+  stroke-width: 1;
+  stroke-dasharray: 1234;
+ 
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  overflow:hidden;
+}
+ 
+ 
+ 
+ .chart[data-percent='100'] .outer {
+  stroke-dashoffset: 0;
+  transition-delay:99999999s;
+transition:1s;
+}
+ 
+ 
+ .chart[data-percent='100'] .outer{
+  -webkit-animation: show100 4s ;
+  animation: show100 4s 9.2s ;
+      -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+ transition-delay:9s;
+ 
+}
+ 
+ 
+ 
+@-webkit-keyframes show100 {
+  0% {
+    stroke-dashoffset: 1237;
+  }
+ 
+  50% {
+    stroke-dashoffset: 0;
+    fill:transparent;
+   
+  }
+ 
+  100%{
+    fill:#e34f26;
+  }
+}
+ 
+@keyframes show100 {
+  0% {
+    stroke-dashoffset: 1237;
+  }
+ 
+  80% {
+    stroke-dashoffset: 0;
+    fill:transparent;
+   
+  }
+ 
+  100%{
+    fill:#fffee7;
+  }
+}
+ 
+ 
+ .chart2 {
+   fill:transparent;
+  position: absolute;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+  top:50%;
+  left:50%;
+  margin-left:-200px;
+  margin-top:-200px;
+  z-index:98;
+  opacity:0;
+  transition:1s;
+  transition-delay:99999999s;
+ 
+}
+ 
+body:hover .chart2{
+  opacity:1;
+  transition-delay:13s;
+}
+ 
+ 
+.chart2 svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ 
+ .outer2 {
+ 
+  stroke: #fffee7;
+  stroke-width: 1;
+  stroke-dasharray: 1534;
+ 
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  transition-delay:9999999s;
+  overflow:hidden;
+}
+ 
+body:hover .outer2{
+ 
+transition-delay:13s;
+transition:4s;
+}
+ 
+ 
+ .chart2[data-percent='100'] .outer2 {
+  stroke-dashoffset: 0;
+  transition-delay:99999999s;
+transition:1s;
+}
+ 
+ 
+ .chart2[data-percent='100'] .outer2{
+  -webkit-animation: show101 4s ;
+  animation: show101 4s 13.3s ;
+      -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+ transition-delay:13s;
+ 
+}
+ 
+ 
+ 
+@-webkit-keyframes show101 {
+  0% {
+    stroke-dashoffset: 1537;
+  }
+ 
+  50% {
+    stroke-dashoffset: 0;
+    fill:transparent;
+   
+  }
+ 
+  100%{
+    fill:#e34f26;
+  }
+}
+ 
+@keyframes show101 {
+  from {
+    stroke-dashoffset: 1537;
+  }
+ 
+  to {
+    stroke-dashoffset: 0;
+   
+   
+  }
+ 
+ 
+}
+ 
+#image{
+ background-image:url(https://cdn.discordapp.com/attachments/365986558861377536/380791206948634624/Worm_2.png);
+ background-size:100%;
+ width:300px;
+ height:160px;
+ border-radius:50%;
+ position:absolute;
+ top:50%;
+ left:50%;
+ z-index:100;
+ filter:invert(80%);
+ margin-top:50px;
+ margin-left:-28px;
+ opacity:0;
+ transition:1s;
+ transition-delay:99999999s
+}
+ 
+body:hover #image{
+ opacity:1;
+ transition-delay:12s;
+}
+ 
+#graphic{
+  background-image:url(https://i.imgur.com/lj0roK5.png);
+  background-size:100%;
+  width:635px;
+  height:635px;
+  position:absolute;
+  z-index:80;
+  top:50%;
+  left:50%;
+  margin-top:-297px;
+  margin-left:-297px;
+  opacity:0;
+  transition-delay:1s;
+   transition-delay:9999999s;
+}
+ 
+body:hover #graphic{
+ opacity:1;
+ transition-delay:16s;
+}
+ 
+#navi-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top:-250px;
+  margin-left:-255px;
+  width: 550px;
+  height: 550px;
+  border-radius: 100%;
+ 
+  -webkit-animation: spin-right 30s linear infinite;
+  animation: spin-right 30s linear infinite;
+  z-index:100;
+  opacity:0;
+  transition:1s;
+   transition-delay:9999999s;
+}
+ 
+body:hover #navi-orbit{
+ opacity:1;
+ transition-delay:16s;
+}
+#navi-orbit:hover{
+  animation-play-state: paused;
+ 
+}
+ 
+ #navi-orbit .navi1 a{
+ border-radius:100%;
+ width:70px;
+ height:70px;
+ background-color: #fffee7;
+ position:absolute;
+ top:0%;
+ left:50%;
+ margin-left:-35px;
+ margin-top:-35px;
+ transition:1s;
+}
+#navi-orbit .navi1 a:hover{
+background-color:#dadada;
+ 
+ 
+}
+ 
+ #navi-orbit .navi2 a{
+ border-radius:100%;
+ width:70px;
+ height:70px;
+ background-color: #fffee7;
+ position:absolute;
+ top:50%;
+ left:50%;
+ margin-left:235px;
+ margin-top:-35px;
+  transition:1s;
+}
+ 
+#navi-orbit .navi2 a:hover{
+background-color:#dadada;
+ 
+ 
+}
+ 
+ 
+ #navi-orbit .navi3 a{
+ border-radius:100%;
+ width:70px;
+ height:70px;
+ background-color: #fffee7;
+ position:absolute;
+ top:50%;
+ left:50%;
+ margin-left:-305px;
+ margin-top:-35px;
+  transition:1s;
+}
+ 
+#navi-orbit .navi3 a:hover{
+background-color:#dadada;
+ 
+ 
+}
+ 
+ #navi-orbit .navi4 a{
+ border-radius:100%;
+ width:70px;
+ height:70px;
+ background-color: #fffee7;
+ position:absolute;
+ top:50%;
+ left:50%;
+ margin-left:-35px;
+ margin-top:235px;
+  transition:1s;
+}
+ 
+#navi-orbit .navi4 a:hover{
+background-color:#dadada;
+ 
+ 
+}
+ 
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+ 
+#one, #two, #three, #four{
+  color:#fff;
+  position:fixed;
+  z-index:100;
+  background-color:;
+  width:400px;
+  height:150px;
+  bottom:0px;
+  left:0px;
+  opacity:0;
+  transition:1s;
+}
+ 
+#one:target, #two:target, #three:target, #four:target{
+  opacity:1;
+  z-index:101;
+}
+ 
+ #line:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 75;
+  left: 0;
+  background-color: #fffee7;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 1s ease-in-out 0s;
+  transition: all 1s ease-in-out 0s;
+}
+ 
+#one:target #line:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+ 
+#two:target #line:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+ 
+#three:target #line:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+ 
+#four:target #line:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+ 
+h1{
+ font-family: 'Heebo', sans-serif;
+ font-size:40pt;
+ font-weight:800;
+ position:absolute;
+ bottom:-30px;
+ color:#fffee7;
+ 
+}
+ 
+#text-box{
+ color:#fffee7;
+ background-color:transparent;
+ width:400px;
+ height:70px;
+  font-family: 'Heebo', sans-serif;
+  font-size:10pt;
+  font-weight:300;
+overflow:auto;
+}
+ 
+a{
+color:#cfceb7;
+text-decoration:none;
+transition:1s;
+}
+ 
+a:hover{
+color:gold;
+}
+</style>
+<div id="one">
+<div id="text-box"><b>00</b> This profile was custom made by <a target="_blank" href="">Hound of TIndalos</a> for Worm's exclusive use, don't take or alter any parts of the code for your own usage. Contact Hound of Tindalos over RPC mail or PM for inquiries on prices and commissions. <br><br>
+<b>01</b> Yes this is or more so inspired Oryx from Destiny, i will play him as a wish. Don't like it? Be so kind as to ignore me and eat a dick. <br><br><b>02</b>Don't start drama with me. I am very nice and patient but there is a limit to everything.<br><br><b>03</b> I don't owe you anything and i don't expect anything from you. With that said i can refuse your rp's.<br><br><b>04</b> All basic blues and thirsty ass bitches can fuck off.<br><br><b>05</b>Room approach is most welcome, and i define myself as a shitposter get me into the mood and will para. </div>
+ <div id="line"></div>
+ <h1>Out of universe</h1>
+</div>
+<div id="two">
+<div id="text-box">
+Aurash / Auryx / <b>Oryx</b><br><br>The Ascendant King<br><br> (Hive) Worm God<br><br> Sovereign of the Osmium Throne<br><br> God King</div>
+ <div id="line"></div>
+ <h1>I am evil???</h1>
+</div>
+<div id="three">
+<div id="text-box">A pact, the deep, ascension, a god, a story oh reader mine...
+<br>The book of counted sorrows... to come
+</div>
+ <div id="line"></div>
+ <h1>Perhaps things</h1>
+</div>
+<div id="four">
+<div id="text-box"><i>"I am Aurash, first daughter of the dead king. I will chase my father’s last screamed warning. I will know what changed the motion of our moons. If the end of the world is coming, I will understand why. On my center eye I swear it. I will understand."</i><br><br>
+<img src="https://i.imgur.com/17ULjIv.jpg" alt="Mountain View">
+<img src="https://i.imgur.com/xUCx09m.jpg" alt="Mountain View">
+
+
+</div>
+ <div id="line"></div>
+ <h1>Frogs are gay</h1>
+</div>
+<div id="text">
+ <p>A long time ago,</p>
+<p>"Now I may speak to the Deep, the beautiful final shape..."
+ </p>
+<p>"I will be King of Shapes. I will learn all the secrets of our destiny. " </p>
+ 
+</div>
+<div id="stars"></div>
+<div id="twinkling"></div>
+<div id="graphic"></div>
+<div id="navi-orbit">
+ <div class="navi1"><a href="#one"></a></div>
+ <div class="navi2"><a href="#two"></a></div>
+ <div class="navi3"><a href="#three"></a></div>
+ <div class="navi4"><a href="#four"></a></div>
+ 
+</div>
+ <figure class="chart" data-percent="100">
+ <svg width="500" height="500">
+ <circle class="outer" cx="120" cy="120" r="120" transform="rotate(-120, 120, 120)"/>
+ <div id="image"></div>
