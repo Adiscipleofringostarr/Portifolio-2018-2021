@@ -1,0 +1,440 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+body{
+background-color:#fff;
+overflow:hidden; 
+
+}
+
+
+::-webkit-scrollbar
+{
+	width: 4px;
+height:6px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+
+#nanu{
+background-color:transparent;
+background-image:url(https://i.imgur.com/uxWSNYA.png);
+background-size:100%;
+width:600px;
+height:800px;
+position:absolute;
+bottom:0vh;
+right:0vw;
+}
+
+#nanu2{
+background-color:transparent;
+background-image:url(https://i.imgur.com/uxWSNYA.png);
+background-size:100%;
+width:600px;
+height:800px;
+position:absolute;
+bottom:0vh;
+right:0vw;
+filter: invert(1);
+}
+
+#box1{
+background-color:#000;
+width:40%;
+height:100%;
+clip-path: polygon(15% 0, 40% 0, 40% 0, 15% 0);
+position:absolute;
+right:0vw;
+bottom:0vh;
+animation: box1 2s 0.5s;
+animation-fill-mode:forwards;
+}
+
+@keyframes box1{
+0%{
+clip-path: polygon(15% 0, 40% 0, 40% 0, 15% 0);
+
+
+}
+
+100%{
+clip-path: polygon(15% 0, 40% 0, 70% 100%, 45% 100%);
+
+}
+}
+
+
+
+#box2{
+background-color:#000;
+width:60%;
+height:100%;
+clip-path: polygon(80% 0, 100% 0, 100% 0, 80% 0);
+position:absolute;
+right:-20vw;
+bottom:0vh;
+animation: box2 2s 0.5s;
+animation-fill-mode:forwards;
+}
+
+@keyframes box2{
+0%{
+clip-path: polygon(80% 0, 100% 0, 100% 0, 80% 0);
+
+}
+
+100%{
+clip-path: polygon(80% 0, 100% 0, 40% 100%, 20% 100%);
+
+}
+}
+
+#nanu3{
+background-color:transparent;
+background-image:url(https://i.imgur.com/uxWSNYA.png);
+background-size:100%;
+width:600px;
+height:800px;
+position:absolute;
+bottom:0vh;
+right:20vw;
+filter: invert(1);
+}
+
+#boxinfo{
+width:300px;
+height:500px;
+background-color:#fff;
+position:absolute;
+right:30vw;
+bottom:10vh;
+z-index:99;
+}
+
+#border{
+width:350px;
+height:550px;
+background-color:#fff;
+position:absolute;
+right:-25px;
+top:-25px;
+clip-path: polygon(50% 0, 20% 0, 100% 80%, 100% 100%, 80% 100%, 100% 80%, 20% 0, 0 20%, 0 0, 18% 0);
+border:10px #000 solid;
+z-index:0;
+animation:appear 1s 2s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+.text1{
+font-family: 'Bebas Neue', cursive;
+font-size:140pt;
+color:#000;
+position:absolute;
+z-index:99;
+top:-20px;
+animation:appear 1s 2s;
+animation-fill-mode:forwards;
+opacity:0;
+
+}
+
+#line{
+width:300px;
+height:10px;
+position:absolute;
+top:155px;
+background-color:#000;
+transform:scaleX(0);
+z-index:10;
+animation: line 1s 2s;
+animation-fill-mode:forwards;
+}
+
+@keyframes line{
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.info{
+width:300px;
+height:300px;
+background-color:#fff;
+position:absolute;
+top:170px;
+bottom:10vh;
+z-index:99;
+font-family: 'Bebas Neue', cursive;
+color:#000;
+font-size:14pt;
+text-align:justify;
+animation:appear 1s 2s;
+animation-fill-mode:forwards;
+opacity:0;
+
+}
+
+#boxteam{
+background-color:#fff;
+width:300px;
+height:100px;
+position:absolute;
+bottom:100px;
+z-index:99;
+overflow-y:hidden;
+overflow-x:auto;
+animation:appear 1s 2s;
+animation-fill-mode:forwards;
+opacity:0;
+
+}
+
+#tabcontainer{
+width:600px;
+height:100px;
+position:absolute;
+z-index:99;
+overflow-y:hidden;
+overflow-x:auto;
+}
+
+#boxteam a{
+width:80px;
+height:80px;
+background-color:transparent;
+display:block;
+margin-left:5px;
+margin-top:10px;
+float:left;
+}
+
+#boxteam a:hover #background{
+animation: triangle 1s ;
+animation-fill-mode:both;
+}
+
+
+#boxpals{
+background-color:#fff;
+width:300px;
+height:100px;
+position:absolute;
+bottom:0px;
+z-index:99;
+overflow-y:hidden;
+overflow-x:auto;
+animation:appear 1s 2s;
+animation-fill-mode:forwards;
+opacity:0;
+
+}
+
+#boxpals a{
+width:80px;
+height:80px;
+background-color:transparent;
+display:block;
+margin-left:5px;
+margin-top:10px;
+float:left;
+}
+
+
+#background{
+background-color:#000;
+width:80px;
+height:80px;
+position:absolute;
+z-index:1;
+clip-path: polygon(0 0, 100% 0, 50% 50%, 0% 100%);
+transition:3s;
+animation:inverted 1s;
+}
+
+@keyframes triangle{
+0%{
+clip-path: polygon(0 0, 100% 0, 50% 50%, 0% 100%);
+
+}
+
+40%{
+clip-path: polygon(50% 50%, 100% 0, 50% 50%, 0% 100%);
+
+}
+
+60%{
+clip-path: polygon(50% 50%, 100% 0, 50% 50%, 0% 100%);
+
+}
+
+100%{
+clip-path: polygon(100% 100%, 100% 0, 50% 50%, 0% 100%);
+
+}
+
+}
+
+@keyframes inverted{
+
+0%{
+clip-path: polygon(100% 100%, 100% 0, 50% 50%, 0% 100%);
+
+}
+
+40%{
+clip-path: polygon(50% 50%, 100% 0, 50% 50%, 0% 100%);
+
+}
+
+60%{
+clip-path: polygon(50% 50%, 100% 0, 50% 50%, 0% 100%);
+
+}
+
+100%{
+clip-path: polygon(0 0, 100% 0, 50% 50%, 0% 100%);
+
+}
+
+}
+
+
+#boxpals a:hover #background{
+animation: triangle 1s ;
+animation-fill-mode:both;
+}
+
+a img{
+position:absolute;
+z-index:99;
+}
+
+.text2{
+font-family: 'Bebas Neue', cursive;
+font-size:35pt;
+color:#000;
+position:absolute;
+z-index:99;
+transform:rotate(-90deg);
+bottom:0px;
+margin-left:-60px;
+margin-bottom:110px;
+animation:appear 1s 2s;
+animation-fill-mode:forwards;
+opacity:0;
+
+}
+
+.text3{
+font-family: 'Bebas Neue', cursive;
+font-size:35pt;
+color:#000;
+position:absolute;
+z-index:99;
+transform:rotate(-90deg);
+bottom:-10px;
+margin-left:-55px;
+margin-bottom:20px;
+animation:appear 1s 2s;
+animation-fill-mode:forwards;
+opacity:0;
+
+}
+
+@keyframes appear{
+0%{ opacity:0;
+}
+100%{
+opacity:1;
+}
+}
+
+#boxteam a .tooltiptext {
+font-family: 'Bebas Neue', cursive;
+
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 2px 5px;
+  position: absolute;
+top:0px;
+margin-left:-5px;
+  z-index: 99;
+}
+
+#boxteam a:hover .tooltiptext {
+  visibility: visible;
+}
+
+#boxpals a .tooltiptext {
+font-family: 'Bebas Neue', cursive;
+
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 2px 5px;
+  position: absolute;
+top:5px;
+margin-left:5px;
+  z-index: 99;
+}
+
+#boxpals a:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<div id="nanu"></div>
+<div id="box1">
+<div id="nanu2"></div>
+</div>
+
+<div id="box2">
+<div id="nanu3"></div>
+</div>
+<div id="boxinfo">
+<div id="border"></div>
+<div class="text1">NANU</div>
+<div id="line"></div>
+<div class="info">Kahuna of Alola. Police officer. Former chief of the international police. Cat mom. Dark type specialist. Mostly too old for this shit. Still kicking. Everyone's cool uncle, but especially Acerola's. Enstranged. Mysterious, brooding type. Asexual out of laziness. Closeted smoker.</div>
+<div class="text2">Team</div>
+<div class="text3">Pals</div>
+<div id="boxteam">
+<div id="tabcontainer">
+<a target="_blank" href="https://roleplay.chat/profile.php?user=Alolan+Meowth"><img src="https://cdn.discordapp.com/attachments/266440115499433996/654483742580146186/ezgif-3-e6b1eac09b20.png" height="80px" width="80px"></img><div id="background"></div><span class="tooltiptext">Brat</span> </a>
+<a target="_blank" href="https://roleplay.chat/profile.php?user=Grimms"><img src="https://pbs.twimg.com/media/EKIjdIqW4AE9DTe.png" height="80px" width="80px"></img><div id="background"></div><span class="tooltiptext">Enigma</span></a>
+<a target="_blank" href="https://roleplay.chat/profile.php?user=Kakureon"><img src="https://pa1.narvii.com/6404/9c4bab2a99dba129c951f816a6ac4635271e63b4_hq.gif" style="width:100px;height:100px; position:absolute; margin-left:-10px; margin-top:-10px;"></img><div id="background"></div><span class="tooltiptext">Detective</span></a><a href=""><div id="background"></div></a>
+<a href=""><div id="background"></div></a>
+<a href=""><div id="background"></div></a>
+<a href=""><div id="background"></div></a>
+<a href=""><div id="background"></div></a>
+<a href=""><div id="background"></div></a>
+
+</div>
+
+
+</div>
+<div id="boxpals">
+<div id="tabcontainer">
+<a target="_blank" href="https://2.roleplay.chat/profile.php?user=053"><img src="https://vignette.wikia.nocookie.net/roblox-pokemon-project/images/e/ec/Pokemans_053.gif/revision/latest?cb=20161108234352" height="80px" width="80px"></img><div id="background"></div><span class="tooltiptext">Cherished</span></a>
+<a target="_blank" href="https://roleplay.chat/profile.php?user=soulsilver"><img src="http://i.picpar.com/ehWd.png" style="width:80px;height:80px; "></img><div id="background"></div><span class="tooltiptext">Legacy<span></a>
+<a target="_blank" href="https://roleplay.chat/profile.php?user=Miss+Fortune"><img src="https://i.pinimg.com/originals/c9/b7/58/c9b758d843bab61549f4206fd8921563.png" style="width:120px;height:80px; position:absolute; margin-left:-20px; margin-top:-10px;"></img><div id="background"></div><span class="tooltiptext">Oddity<span></a><a href=""><div id="background"></div></a>
+<a href=""><div id="background"></div></a>
+<a href=""><div id="background"></div></a>
+<a href=""><div id="background"></div></a>
+<a href=""><div id="background"></div></a>
+</div>
+
+</div>
+
+</div>
